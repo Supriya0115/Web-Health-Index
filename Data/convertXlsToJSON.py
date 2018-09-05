@@ -9,18 +9,17 @@ import json
 
 def JSON_from_excel():
         wb = xlrd.open_workbook('2017 County Health Rankings New Jersey DataUnFreez - v2.xls',ragged_rows = True)
-        print("Hi 1 ")
         StateList = []
         if (wb != None):    
             sh = wb.sheet_by_name('Ranked Measure Data') 
-            StateName = ""
             CountyList = []
             if (sh != None): 
 
                 for row_index in range(sh.nrows):
                     HealthyCounty = {}
                     if(row_index > 2 ):
-                        StateName = sh.cell(row_index, 1 ).value
+                        
+                        # StateName = sh.cell(row_index, 1 ).value #---unused at the moment
                         HealthBehaviours = {
                             "PercentageSmokers" : sh.cell(row_index, 27 ).value, # 
                             "FoodEnvironmentIndex" : sh.cell(row_index, 35 ).value,
@@ -53,17 +52,20 @@ def JSON_from_excel():
                             "HealthBehaviours" : HealthBehaviours
                         }
 
-                        
-                        CountyList.append(HealthyCounty)
-
-                State = {
-                            "StateName":sh.cell(row_index, 1 ).value,
-                            "FIPS":sh.cell(row_index, 0 ).value,
-                            "Counties" : CountyList                      
+                        County = {
+                            "County" : HealthyCounty
                         }
-                StateList.append(State)
-                print(State)
-        jsonfile = StateName + '.json'
+                        
+                        CountyList.append(County)
+                if(row_index == sh.nrows - 1):
+                    State = {
+                                "StateName":sh.cell(row_index, 1 ).value,
+                                "FIPS":sh.cell(row_index, 0 ).value,
+                                "Counties" : CountyList                      
+                            }
+                    StateList.append(State)
+                    # print(State)
+        jsonfile = "StateData" + '.json'
         with open(jsonfile, 'w') as f:
             json.dump(StateList, f, indent = 4)
 
