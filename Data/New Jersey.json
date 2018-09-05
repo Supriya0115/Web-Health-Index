@@ -1,0 +1,491 @@
+[
+    {
+        "StateName": "New Jersey",
+        "FIPS": "34041",
+        "Counties": [
+            {
+                "CountyName": "Atlantic",
+                "PhysicalEnvironment": {
+                    "AirPollution": 8.8,
+                    "WaterViolations": -1.5430335,
+                    "HouseholdProblems": 26505.0
+                },
+                "EconomicFactors": {
+                    "GraduationRate": 89.089677787,
+                    "PercentageUnemployed": 9.369761722,
+                    "TopPercentileIncome": 110254.0
+                },
+                "ClinicalCare": {
+                    "Uninsured": 34377.0,
+                    "MedicareEnrollees": 36838.0,
+                    "PrimaryCarePhysicians": 220.0
+                },
+                "HealthBehaviours": {
+                    "PercentageSmokers": 17.19704718,
+                    "FoodEnvironmentIndex": 6.8,
+                    "DrivingDeaths": 192.0
+                }
+            },
+            {
+                "CountyName": "Bergen",
+                "PhysicalEnvironment": {
+                    "AirPollution": 10.0,
+                    "WaterViolations": 0.6172133998,
+                    "HouseholdProblems": 78345.0
+                },
+                "EconomicFactors": {
+                    "GraduationRate": 94.516785446,
+                    "PercentageUnemployed": 4.5522917027,
+                    "TopPercentileIncome": 169504.0
+                },
+                "ClinicalCare": {
+                    "Uninsured": 93391.0,
+                    "MedicareEnrollees": 120052.0,
+                    "PrimaryCarePhysicians": 1156.0
+                },
+                "HealthBehaviours": {
+                    "PercentageSmokers": 11.669209956,
+                    "FoodEnvironmentIndex": 9.0,
+                    "DrivingDeaths": 170.0
+                }
+            },
+            {
+                "CountyName": "Burlington",
+                "PhysicalEnvironment": {
+                    "AirPollution": 10.5,
+                    "WaterViolations": 0.6172133998,
+                    "HouseholdProblems": 26480.0
+                },
+                "EconomicFactors": {
+                    "GraduationRate": 92.577438031,
+                    "PercentageUnemployed": 5.1979910397,
+                    "TopPercentileIncome": 144267.0
+                },
+                "ClinicalCare": {
+                    "Uninsured": 28938.0,
+                    "MedicareEnrollees": 54640.0,
+                    "PrimaryCarePhysicians": 381.0
+                },
+                "HealthBehaviours": {
+                    "PercentageSmokers": 12.751794191,
+                    "FoodEnvironmentIndex": 8.3,
+                    "DrivingDeaths": 219.0
+                }
+            },
+            {
+                "CountyName": "Camden",
+                "PhysicalEnvironment": {
+                    "AirPollution": 10.6,
+                    "WaterViolations": 0.6172133998,
+                    "HouseholdProblems": 40440.0
+                },
+                "EconomicFactors": {
+                    "GraduationRate": 86.964349232,
+                    "PercentageUnemployed": 6.2838255911,
+                    "TopPercentileIncome": 122036.0
+                },
+                "ClinicalCare": {
+                    "Uninsured": 53848.0,
+                    "MedicareEnrollees": 56363.0,
+                    "PrimaryCarePhysicians": 529.0
+                },
+                "HealthBehaviours": {
+                    "PercentageSmokers": 16.64231307,
+                    "FoodEnvironmentIndex": 7.6,
+                    "DrivingDeaths": 179.0
+                }
+            },
+            {
+                "CountyName": "Cape May",
+                "PhysicalEnvironment": {
+                    "AirPollution": 8.3,
+                    "WaterViolations": -1.5430335,
+                    "HouseholdProblems": 9665.0
+                },
+                "EconomicFactors": {
+                    "GraduationRate": 87.190891473,
+                    "PercentageUnemployed": 10.85364856,
+                    "TopPercentileIncome": 112604.0
+                },
+                "ClinicalCare": {
+                    "Uninsured": 8575.0,
+                    "MedicareEnrollees": 19457.0,
+                    "PrimaryCarePhysicians": 57.0
+                },
+                "HealthBehaviours": {
+                    "PercentageSmokers": 14.273998108,
+                    "FoodEnvironmentIndex": 7.1,
+                    "DrivingDeaths": 49.0
+                }
+            },
+            {
+                "CountyName": "Cumberland",
+                "PhysicalEnvironment": {
+                    "AirPollution": 9.2,
+                    "WaterViolations": 0.6172133998,
+                    "HouseholdProblems": 11950.0
+                },
+                "EconomicFactors": {
+                    "GraduationRate": 82.285554936,
+                    "PercentageUnemployed": 8.6752637749,
+                    "TopPercentileIncome": 98406.0
+                },
+                "ClinicalCare": {
+                    "Uninsured": 18876.0,
+                    "MedicareEnrollees": 17606.0,
+                    "PrimaryCarePhysicians": 75.0
+                },
+                "HealthBehaviours": {
+                    "PercentageSmokers": 19.603727496,
+                    "FoodEnvironmentIndex": 7.0,
+                    "DrivingDeaths": 113.0
+                }
+            },
+            {
+                "CountyName": "Essex",
+                "PhysicalEnvironment": {
+                    "AirPollution": 10.0,
+                    "WaterViolations": 0.6172133998,
+                    "HouseholdProblems": 81635.0
+                },
+                "EconomicFactors": {
+                    "GraduationRate": 83.322528108,
+                    "PercentageUnemployed": 6.7141609695,
+                    "TopPercentileIncome": 126876.0
+                },
+                "ClinicalCare": {
+                    "Uninsured": 113132.0,
+                    "MedicareEnrollees": 69184.0,
+                    "PrimaryCarePhysicians": 658.0
+                },
+                "HealthBehaviours": {
+                    "PercentageSmokers": 15.100945961,
+                    "FoodEnvironmentIndex": 7.0,
+                    "DrivingDeaths": 213.0
+                }
+            },
+            {
+                "CountyName": "Gloucester",
+                "PhysicalEnvironment": {
+                    "AirPollution": 10.3,
+                    "WaterViolations": 0.6172133998,
+                    "HouseholdProblems": 17055.0
+                },
+                "EconomicFactors": {
+                    "GraduationRate": 91.674175382,
+                    "PercentageUnemployed": 5.9237383827,
+                    "TopPercentileIncome": 137621.0
+                },
+                "ClinicalCare": {
+                    "Uninsured": 20538.0,
+                    "MedicareEnrollees": 30108.0,
+                    "PrimaryCarePhysicians": 165.0
+                },
+                "HealthBehaviours": {
+                    "PercentageSmokers": 15.713041347,
+                    "FoodEnvironmentIndex": 7.8,
+                    "DrivingDeaths": 129.0
+                }
+            },
+            {
+                "CountyName": "Hudson",
+                "PhysicalEnvironment": {
+                    "AirPollution": 10.2,
+                    "WaterViolations": -1.5430335,
+                    "HouseholdProblems": 71370.0
+                },
+                "EconomicFactors": {
+                    "GraduationRate": 82.789926495,
+                    "PercentageUnemployed": 5.2605137123,
+                    "TopPercentileIncome": 126816.0
+                },
+                "ClinicalCare": {
+                    "Uninsured": 110211.0,
+                    "MedicareEnrollees": 45388.0,
+                    "PrimaryCarePhysicians": 356.0
+                },
+                "HealthBehaviours": {
+                    "PercentageSmokers": 15.702846709,
+                    "FoodEnvironmentIndex": 8.3,
+                    "DrivingDeaths": 116.0
+                }
+            },
+            {
+                "CountyName": "Hunterdon",
+                "PhysicalEnvironment": {
+                    "AirPollution": 10.1,
+                    "WaterViolations": 0.6172133998,
+                    "HouseholdProblems": 7880.0
+                },
+                "EconomicFactors": {
+                    "GraduationRate": 95.913466889,
+                    "PercentageUnemployed": 4.0945667957,
+                    "TopPercentileIncome": 194114.0
+                },
+                "ClinicalCare": {
+                    "Uninsured": 6373.0,
+                    "MedicareEnrollees": 18131.0,
+                    "PrimaryCarePhysicians": 144.0
+                },
+                "HealthBehaviours": {
+                    "PercentageSmokers": 10.899839298,
+                    "FoodEnvironmentIndex": 9.4,
+                    "DrivingDeaths": 40.0
+                }
+            },
+            {
+                "CountyName": "Mercer",
+                "PhysicalEnvironment": {
+                    "AirPollution": 8.9,
+                    "WaterViolations": -1.5430335,
+                    "HouseholdProblems": 25415.0
+                },
+                "EconomicFactors": {
+                    "GraduationRate": 90.278612228,
+                    "PercentageUnemployed": 4.8281439953,
+                    "TopPercentileIncome": 151216.0
+                },
+                "ClinicalCare": {
+                    "Uninsured": 35429.0,
+                    "MedicareEnrollees": 42526.0,
+                    "PrimaryCarePhysicians": 386.0
+                },
+                "HealthBehaviours": {
+                    "PercentageSmokers": 13.913062948,
+                    "FoodEnvironmentIndex": 8.1,
+                    "DrivingDeaths": 126.0
+                }
+            },
+            {
+                "CountyName": "Middlesex",
+                "PhysicalEnvironment": {
+                    "AirPollution": 9.6,
+                    "WaterViolations": -1.5430335,
+                    "HouseholdProblems": 57675.0
+                },
+                "EconomicFactors": {
+                    "GraduationRate": 90.180382421,
+                    "PercentageUnemployed": 4.9813440886,
+                    "TopPercentileIncome": 146779.0
+                },
+                "ClinicalCare": {
+                    "Uninsured": 83799.0,
+                    "MedicareEnrollees": 83595.0,
+                    "PrimaryCarePhysicians": 795.0
+                },
+                "HealthBehaviours": {
+                    "PercentageSmokers": 11.406368669,
+                    "FoodEnvironmentIndex": 8.6,
+                    "DrivingDeaths": 245.0
+                }
+            },
+            {
+                "CountyName": "Monmouth",
+                "PhysicalEnvironment": {
+                    "AirPollution": 9.5,
+                    "WaterViolations": 0.6172133998,
+                    "HouseholdProblems": 48645.0
+                },
+                "EconomicFactors": {
+                    "GraduationRate": 93.652365578,
+                    "PercentageUnemployed": 4.9628644575,
+                    "TopPercentileIncome": 166503.0
+                },
+                "ClinicalCare": {
+                    "Uninsured": 53105.0,
+                    "MedicareEnrollees": 84026.0,
+                    "PrimaryCarePhysicians": 711.0
+                },
+                "HealthBehaviours": {
+                    "PercentageSmokers": 12.851873747,
+                    "FoodEnvironmentIndex": 8.6,
+                    "DrivingDeaths": 191.0
+                }
+            },
+            {
+                "CountyName": "Morris",
+                "PhysicalEnvironment": {
+                    "AirPollution": 9.3,
+                    "WaterViolations": 0.6172133998,
+                    "HouseholdProblems": 30830.0
+                },
+                "EconomicFactors": {
+                    "GraduationRate": 95.326765189,
+                    "PercentageUnemployed": 4.2264274211,
+                    "TopPercentileIncome": 188334.0
+                },
+                "ClinicalCare": {
+                    "Uninsured": 33605.0,
+                    "MedicareEnrollees": 65957.0,
+                    "PrimaryCarePhysicians": 518.0
+                },
+                "HealthBehaviours": {
+                    "PercentageSmokers": 10.973451671,
+                    "FoodEnvironmentIndex": 9.2,
+                    "DrivingDeaths": 116.0
+                }
+            },
+            {
+                "CountyName": "Ocean",
+                "PhysicalEnvironment": {
+                    "AirPollution": 7.9,
+                    "WaterViolations": 0.6172133998,
+                    "HouseholdProblems": 47200.0
+                },
+                "EconomicFactors": {
+                    "GraduationRate": 90.718911027,
+                    "PercentageUnemployed": 6.0018243759,
+                    "TopPercentileIncome": 119957.0
+                },
+                "ClinicalCare": {
+                    "Uninsured": 54893.0,
+                    "MedicareEnrollees": 101742.0,
+                    "PrimaryCarePhysicians": 274.0
+                },
+                "HealthBehaviours": {
+                    "PercentageSmokers": 14.903988262,
+                    "FoodEnvironmentIndex": 7.7,
+                    "DrivingDeaths": 237.0
+                }
+            },
+            {
+                "CountyName": "Passaic",
+                "PhysicalEnvironment": {
+                    "AirPollution": 9.8,
+                    "WaterViolations": 0.6172133998,
+                    "HouseholdProblems": 55725.0
+                },
+                "EconomicFactors": {
+                    "GraduationRate": 87.152558285,
+                    "PercentageUnemployed": 6.8633616253,
+                    "TopPercentileIncome": 125359.0
+                },
+                "ClinicalCare": {
+                    "Uninsured": 69273.0,
+                    "MedicareEnrollees": 48509.0,
+                    "PrimaryCarePhysicians": 300.0
+                },
+                "HealthBehaviours": {
+                    "PercentageSmokers": 14.453694837,
+                    "FoodEnvironmentIndex": 8.4,
+                    "DrivingDeaths": 143.0
+                }
+            },
+            {
+                "CountyName": "Salem",
+                "PhysicalEnvironment": {
+                    "AirPollution": 10.2,
+                    "WaterViolations": 0.6172133998,
+                    "HouseholdProblems": 4625.0
+                },
+                "EconomicFactors": {
+                    "GraduationRate": 88.069306931,
+                    "PercentageUnemployed": 7.066306249,
+                    "TopPercentileIncome": 117062.0
+                },
+                "ClinicalCare": {
+                    "Uninsured": 5861.0,
+                    "MedicareEnrollees": 9259.0,
+                    "PrimaryCarePhysicians": 27.0
+                },
+                "HealthBehaviours": {
+                    "PercentageSmokers": 18.221659497,
+                    "FoodEnvironmentIndex": 7.7,
+                    "DrivingDeaths": 64.0
+                }
+            },
+            {
+                "CountyName": "Somerset",
+                "PhysicalEnvironment": {
+                    "AirPollution": 9.8,
+                    "WaterViolations": -1.5430335,
+                    "HouseholdProblems": 21810.0
+                },
+                "EconomicFactors": {
+                    "GraduationRate": 93.412464215,
+                    "PercentageUnemployed": 4.4178409944,
+                    "TopPercentileIncome": 192058.0
+                },
+                "ClinicalCare": {
+                    "Uninsured": 22490.0,
+                    "MedicareEnrollees": 37648.0,
+                    "PrimaryCarePhysicians": 367.0
+                },
+                "HealthBehaviours": {
+                    "PercentageSmokers": 10.4653706,
+                    "FoodEnvironmentIndex": 9.1,
+                    "DrivingDeaths": 103.0
+                }
+            },
+            {
+                "CountyName": "Sussex",
+                "PhysicalEnvironment": {
+                    "AirPollution": 8.6,
+                    "WaterViolations": 0.6172133998,
+                    "HouseholdProblems": 9970.0
+                },
+                "EconomicFactors": {
+                    "GraduationRate": 93.307053942,
+                    "PercentageUnemployed": 5.2440926611,
+                    "TopPercentileIncome": 148836.0
+                },
+                "ClinicalCare": {
+                    "Uninsured": 10776.0,
+                    "MedicareEnrollees": 18771.0,
+                    "PrimaryCarePhysicians": 69.0
+                },
+                "HealthBehaviours": {
+                    "PercentageSmokers": 13.335768642,
+                    "FoodEnvironmentIndex": 8.9,
+                    "DrivingDeaths": 49.0
+                }
+            },
+            {
+                "CountyName": "Union",
+                "PhysicalEnvironment": {
+                    "AirPollution": 10.7,
+                    "WaterViolations": 0.6172133998,
+                    "HouseholdProblems": 53505.0
+                },
+                "EconomicFactors": {
+                    "GraduationRate": 89.661485059,
+                    "PercentageUnemployed": 5.8578452391,
+                    "TopPercentileIncome": 142409.0
+                },
+                "ClinicalCare": {
+                    "Uninsured": 73763.0,
+                    "MedicareEnrollees": 56131.0,
+                    "PrimaryCarePhysicians": 373.0
+                },
+                "HealthBehaviours": {
+                    "PercentageSmokers": 13.233885023,
+                    "FoodEnvironmentIndex": 8.4,
+                    "DrivingDeaths": 131.0
+                }
+            },
+            {
+                "CountyName": "Warren",
+                "PhysicalEnvironment": {
+                    "AirPollution": 9.0,
+                    "WaterViolations": 0.6172133998,
+                    "HouseholdProblems": 7010.0
+                },
+                "EconomicFactors": {
+                    "GraduationRate": 91.840409956,
+                    "PercentageUnemployed": 5.2299463371,
+                    "TopPercentileIncome": 130705.0
+                },
+                "ClinicalCare": {
+                    "Uninsured": 9062.0,
+                    "MedicareEnrollees": 15398.0,
+                    "PrimaryCarePhysicians": 69.0
+                },
+                "HealthBehaviours": {
+                    "PercentageSmokers": 15.57517723,
+                    "FoodEnvironmentIndex": 8.3,
+                    "DrivingDeaths": 51.0
+                }
+            }
+        ]
+    }
+]
