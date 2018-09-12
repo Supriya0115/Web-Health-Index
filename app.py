@@ -26,7 +26,7 @@ db = client.State
 
 db.Category
 # iterate all States
-print("test1")
+# print("test1")
 i = 1
 for perState in db.State.find():
     if ('StateName' in perState and 'Counties' in perState):
@@ -50,7 +50,7 @@ def names():
     # First element in the samples_column_list is 'otu_id' so sample list is from 2nd element to the last element
     db = client.Category
     for item in db.Category.find():
-        print("inside find cat")
+        # print("inside find cat")
         if ('cat' in item):
             for cat in item['cat']:
                 print(cat)
