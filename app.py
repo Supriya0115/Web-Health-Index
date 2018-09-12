@@ -41,6 +41,8 @@ for perState in db.State.find():
 @app.route("/")
 def home():
     return(render_template("Landing.html"))
+    # return(render_template("Landing_SS.html"))
+
 
 @app.route("/names")
 def names():
