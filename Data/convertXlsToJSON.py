@@ -7,7 +7,6 @@ import pandas as pd
 import json
 from pymongo import MongoClient
 from bson.binary import Binary
-import pickle
 #----------------------------------------------------------------#
 
 def JSON_from_excel():
@@ -98,13 +97,10 @@ def JSON_from_excel():
         db.State.drop()
         result = state.insert_many(StateList)
         print("Multiple States {0}".format(result.inserted_ids))
-        # result.save(filename="test.mongodb")
-        thebytes = pickle.dumps(StateList)
-        state.insert({'bin-data': Binary(thebytes)})
-        print("test 1")
+       
         for item in db.State.find():
-            if ('StateName' in item and 'Counties' in item):
-                print(item)
+            # if ('StateName' in item and 'Counties' in item):
+            print(item)
         # db.State.find().pretty()
         
 JSON_from_excel()
