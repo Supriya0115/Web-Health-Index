@@ -61,6 +61,7 @@ def JSON_from_excel():
 
                             HealthyCounty = {
                                 "CountyName" : sh.cell(row_index, 2 ).value,
+                                "County FIPS" : sh.cell(row_index, 0 ).value,
                                 "QualityofLife": QualityofLife,
                                 "HealthBehaviours" : HealthBehaviours,
                                 "ClinicalCare" : ClinicalCare,

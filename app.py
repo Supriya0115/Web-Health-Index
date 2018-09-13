@@ -1,79 +1,75 @@
 # modules to interact with mongoDB
 import pymongo # runs on 27017
-import requests
-# from bs4 import beautifulSoup as bs
-# Import Libraries
-import numpy as np
-
-from flask import(
-    Flask,
-    render_template,
-    jsonify,
-    request)
+#modules to use flask
+from flask import(Flask, render_template, jsonify)
 
 #------------------------------------------------------------------------------------#
 # Flask Setup #
 #------------------------------------------------------------------------------------#
 app = Flask(__name__)
 
-conn = "mongodb://localhost:27017"
-client = pymongo.MongoClient(conn)
+#Server DB connection
+conn = 'mongodb://<dbuser>:<dbpassword>@ds255332.mlab.com:55332/healthi_db'
+client = pymongo.MongoClient(conn,ConnectTimeoutMS=30000)
+
+db = client.get_default_database()
+# db = client.get_database('healthi_db')
+
+#Local DB connection
+# conn = "mongodb://localhost:27017"
+# client = pymongo.MongoClient(conn)
 
 # create / Use database
-db = client.State
-
-# look up State / document in the collection
-
-db.Category
-# iterate all States
-# print("test1")
-i = 1
-for perState in db.State.find():
-    if ('StateName' in perState and 'Counties' in perState):
-        # print(perState['StateName'])
-        # print(perState['Year'])
-        for county in perState['Counties']:
-            # print(county)
-            i += 1
-# print(i)
+# db = client.HealthDB
 
 # Home Page --> Render Landing.html from template
 @app.route("/")
 def home():
-    return(render_template("Landing.html"))   
-     
-@app.route("/names")
-def names():
-    print("Names invoked")
+    return(render_template("Landing.html"))
+
+@app.route("/attributes")
+def attributes():
+    # print("Names invoked")
     # Get the sample list which is the column names in Samples table 
     sample_list = []
-    # First element in the samples_column_list is 'otu_id' so sample list is from 2nd element to the last element
-    db = client.Category
     for item in db.Category.find():
-        # print("inside find cat")
-        if ('cat' in item):
-            for cat in item['cat']:
-                print(cat)
-                sample_list.append(cat)
-    # print(sample_list)
+        for cat in item['cat']:
+            sample_list.append(cat)
     return jsonify(sample_list)
+
+@app.route("/states")
+def state():
+    sample_list = []
+    for item in db.State.find():
+        Statedict={}
+        Statedict['State'] = item['StateName']                
+        sample_list.append(Statedict)
+    return jsonify(sample_list)  
+
+@app.route("/countynames/<state>")
+def county(state):
+    sample_list = []
+    for item in db.State.find():
+        Countydict={}
+        if item['StateName'].lower() == state.lower():
+            Countydict['Counties'] = item['Counties']              
+            sample_list.append(Countydict)
+    return jsonify(sample_list)        
 
 # Route to display the state specific information    
 @app.route("/details/<state>")
 def details(state):
     sample_list = []
-    db = client.State
     for item in db.State.find():
-        # if 'StateName' in item:
-            Statedict = {}
-            if item['StateName'].lower() == state.lower():
-                Statedict['State'] = item['StateName']
-                Statedict['Year'] = item['Year']
-                Statedict['FIPS'] = item['FIPS']
-                Statedict['Counties'] = item['Counties']
-                sample_list.append(Statedict)
+        Statedetaildict = {}
+        if item['StateName'].lower() == state.lower():
+            Statedetaildict['State'] = item['StateName']
+            Statedetaildict['Year'] = item['Year']
+            Statedetaildict['FIPS'] = item['FIPS']
+            Statedetaildict['Counties'] = item['Counties']
+            sample_list.append(Statedetaildict)
+        print(sample_list)    
     return jsonify(sample_list)        
-
 #------------------------------------------------------------------------------------#
 # Initiate Flask app
 #------------------------------------------------------------------------------------#
