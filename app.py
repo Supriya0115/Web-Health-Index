@@ -40,10 +40,8 @@ for perState in db.State.find():
 # Home Page --> Render Landing.html from template
 @app.route("/")
 def home():
-    return(render_template("Landing.html"))
-    # return(render_template("Landing_SS.html"))
-
-
+    return(render_template("Landing.html"))   
+     
 @app.route("/names")
 def names():
     print("Names invoked")
@@ -59,6 +57,22 @@ def names():
                 sample_list.append(cat)
     # print(sample_list)
     return jsonify(sample_list)
+
+# Route to display the state specific information    
+@app.route("/details/<state>")
+def details(state):
+    sample_list = []
+    db = client.State
+    for item in db.State.find():
+        # if 'StateName' in item:
+            Statedict = {}
+            if item['StateName'].lower() == state.lower():
+                Statedict['State'] = item['StateName']
+                Statedict['Year'] = item['Year']
+                Statedict['FIPS'] = item['FIPS']
+                Statedict['Counties'] = item['Counties']
+                sample_list.append(Statedict)
+    return jsonify(sample_list)        
 
 #------------------------------------------------------------------------------------#
 # Initiate Flask app
