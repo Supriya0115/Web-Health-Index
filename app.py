@@ -9,7 +9,7 @@ from flask import(Flask, render_template, jsonify)
 app = Flask(__name__)
 
 #Server DB connection
-conn = 'mongodb://<dbuser>:<dbpassword>@ds255332.mlab.com:55332/healthi_db'
+conn = 'mongodb://healthi_admin:healthisrs9=@ds255332.mlab.com:55332/healthi_db'
 client = pymongo.MongoClient(conn,ConnectTimeoutMS=30000)
 
 db = client.get_default_database()
