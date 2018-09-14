@@ -7,6 +7,7 @@
             {
                 "County": {
                     "CountyName": "Aleutians East",
+                    "County FIPS": "02013",
                     "QualityofLife": {
                         "Z-Score": 0.0,
                         "Rank": 0.0
@@ -32,6 +33,7 @@
             {
                 "County": {
                     "CountyName": "Aleutians West",
+                    "County FIPS": "02016",
                     "QualityofLife": {
                         "Z-Score": 0.2096800248,
                         "Rank": 20.0
@@ -57,6 +59,7 @@
             {
                 "County": {
                     "CountyName": "Anchorage",
+                    "County FIPS": "02020",
                     "QualityofLife": {
                         "Z-Score": -0.120766527,
                         "Rank": 12.0
@@ -82,6 +85,7 @@
             {
                 "County": {
                     "CountyName": "Bethel",
+                    "County FIPS": "02050",
                     "QualityofLife": {
                         "Z-Score": 0.407667751,
                         "Rank": 22.0
@@ -107,6 +111,7 @@
             {
                 "County": {
                     "CountyName": "Bristol Bay",
+                    "County FIPS": "02060",
                     "QualityofLife": {
                         "Z-Score": -0.098317503,
                         "Rank": 13.0
@@ -132,6 +137,7 @@
             {
                 "County": {
                     "CountyName": "Denali",
+                    "County FIPS": "02068",
                     "QualityofLife": {
                         "Z-Score": -0.125053069,
                         "Rank": 11.0
@@ -157,6 +163,7 @@
             {
                 "County": {
                     "CountyName": "Dillingham",
+                    "County FIPS": "02070",
                     "QualityofLife": {
                         "Z-Score": 0.5433083456,
                         "Rank": 23.0
@@ -182,6 +189,7 @@
             {
                 "County": {
                     "CountyName": "Fairbanks North Star",
+                    "County FIPS": "02090",
                     "QualityofLife": {
                         "Z-Score": -0.192239854,
                         "Rank": 7.0
@@ -207,6 +215,7 @@
             {
                 "County": {
                     "CountyName": "Haines",
+                    "County FIPS": "02100",
                     "QualityofLife": {
                         "Z-Score": -0.191182874,
                         "Rank": 8.0
@@ -232,6 +241,7 @@
             {
                 "County": {
                     "CountyName": "Hoonah-Angoon",
+                    "County FIPS": "02105",
                     "QualityofLife": {
                         "Z-Score": -0.003386541,
                         "Rank": 15.0
@@ -257,6 +267,7 @@
             {
                 "County": {
                     "CountyName": "Juneau",
+                    "County FIPS": "02110",
                     "QualityofLife": {
                         "Z-Score": -0.395163715,
                         "Rank": 4.0
@@ -282,6 +293,7 @@
             {
                 "County": {
                     "CountyName": "Kenai Peninsula",
+                    "County FIPS": "02122",
                     "QualityofLife": {
                         "Z-Score": -0.308967121,
                         "Rank": 5.0
@@ -307,6 +319,7 @@
             {
                 "County": {
                     "CountyName": "Ketchikan Gateway",
+                    "County FIPS": "02130",
                     "QualityofLife": {
                         "Z-Score": -0.183572641,
                         "Rank": 9.0
@@ -332,6 +345,7 @@
             {
                 "County": {
                     "CountyName": "Kodiak Island",
+                    "County FIPS": "02150",
                     "QualityofLife": {
                         "Z-Score": -0.411091987,
                         "Rank": 2.0
@@ -357,6 +371,7 @@
             {
                 "County": {
                     "CountyName": "Kusilvak",
+                    "County FIPS": "02158",
                     "QualityofLife": {
                         "Z-Score": 0.9556823128,
                         "Rank": 25.0
@@ -382,6 +397,7 @@
             {
                 "County": {
                     "CountyName": "Lake and Peninsula",
+                    "County FIPS": "02164",
                     "QualityofLife": {
                         "Z-Score": 0.0324781501,
                         "Rank": 16.0
@@ -407,6 +423,7 @@
             {
                 "County": {
                     "CountyName": "Matanuska-Susitna",
+                    "County FIPS": "02170",
                     "QualityofLife": {
                         "Z-Score": -0.147969007,
                         "Rank": 10.0
@@ -432,6 +449,7 @@
             {
                 "County": {
                     "CountyName": "Nome",
+                    "County FIPS": "02180",
                     "QualityofLife": {
                         "Z-Score": 0.3356626333,
                         "Rank": 21.0
@@ -457,6 +475,7 @@
             {
                 "County": {
                     "CountyName": "North Slope",
+                    "County FIPS": "02185",
                     "QualityofLife": {
                         "Z-Score": 0.0655435354,
                         "Rank": 17.0
@@ -482,6 +501,7 @@
             {
                 "County": {
                     "CountyName": "Northwest Arctic",
+                    "County FIPS": "02188",
                     "QualityofLife": {
                         "Z-Score": 0.5599762572,
                         "Rank": 24.0
@@ -507,6 +527,7 @@
             {
                 "County": {
                     "CountyName": "Petersburg",
+                    "County FIPS": "02195",
                     "QualityofLife": {
                         "Z-Score": -0.218119329,
                         "Rank": 6.0
@@ -532,6 +553,7 @@
             {
                 "County": {
                     "CountyName": "Prince of Wales-Hyder",
+                    "County FIPS": "02198",
                     "QualityofLife": {
                         "Z-Score": 0.0839167399,
                         "Rank": 18.0
@@ -557,6 +579,7 @@
             {
                 "County": {
                     "CountyName": "Sitka",
+                    "County FIPS": "02220",
                     "QualityofLife": {
                         "Z-Score": -0.062533619,
                         "Rank": 14.0
@@ -582,6 +605,7 @@
             {
                 "County": {
                     "CountyName": "Skagway",
+                    "County FIPS": "02230",
                     "QualityofLife": {
                         "Z-Score": 0.0,
                         "Rank": 0.0
@@ -607,6 +631,7 @@
             {
                 "County": {
                     "CountyName": "Southeast Fairbanks",
+                    "County FIPS": "02240",
                     "QualityofLife": {
                         "Z-Score": -0.408288573,
                         "Rank": 3.0
@@ -632,6 +657,7 @@
             {
                 "County": {
                     "CountyName": "Valdez-Cordova",
+                    "County FIPS": "02261",
                     "QualityofLife": {
                         "Z-Score": -0.464769308,
                         "Rank": 1.0
@@ -657,6 +683,7 @@
             {
                 "County": {
                     "CountyName": "Wrangell",
+                    "County FIPS": "02275",
                     "QualityofLife": {
                         "Z-Score": 0.0,
                         "Rank": 0.0
@@ -682,6 +709,7 @@
             {
                 "County": {
                     "CountyName": "Yakutat",
+                    "County FIPS": "02282",
                     "QualityofLife": {
                         "Z-Score": 0.0,
                         "Rank": 0.0
@@ -707,6 +735,7 @@
             {
                 "County": {
                     "CountyName": "Yukon-Koyukuk",
+                    "County FIPS": "02290",
                     "QualityofLife": {
                         "Z-Score": 0.1204994674,
                         "Rank": 19.0
@@ -739,6 +768,7 @@
             {
                 "County": {
                     "CountyName": "Alameda",
+                    "County FIPS": "06001",
                     "QualityofLife": {
                         "Z-Score": -0.143483919,
                         "Rank": 20.0
@@ -764,6 +794,7 @@
             {
                 "County": {
                     "CountyName": "Alpine",
+                    "County FIPS": "06003",
                     "QualityofLife": {
                         "Z-Score": "",
                         "Rank": "NR"
@@ -789,6 +820,7 @@
             {
                 "County": {
                     "CountyName": "Amador",
+                    "County FIPS": "06005",
                     "QualityofLife": {
                         "Z-Score": 0.010897421,
                         "Rank": 30.0
@@ -814,6 +846,7 @@
             {
                 "County": {
                     "CountyName": "Butte",
+                    "County FIPS": "06007",
                     "QualityofLife": {
                         "Z-Score": 0.028647655,
                         "Rank": 31.0
@@ -839,6 +872,7 @@
             {
                 "County": {
                     "CountyName": "Calaveras",
+                    "County FIPS": "06009",
                     "QualityofLife": {
                         "Z-Score": -0.602858451,
                         "Rank": 2.0
@@ -864,6 +898,7 @@
             {
                 "County": {
                     "CountyName": "Colusa",
+                    "County FIPS": "06011",
                     "QualityofLife": {
                         "Z-Score": 0.1597705075,
                         "Rank": 40.0
@@ -889,6 +924,7 @@
             {
                 "County": {
                     "CountyName": "Contra Costa",
+                    "County FIPS": "06013",
                     "QualityofLife": {
                         "Z-Score": -0.233181584,
                         "Rank": 15.0
@@ -914,6 +950,7 @@
             {
                 "County": {
                     "CountyName": "Del Norte",
+                    "County FIPS": "06015",
                     "QualityofLife": {
                         "Z-Score": -0.153954038,
                         "Rank": 19.0
@@ -939,6 +976,7 @@
             {
                 "County": {
                     "CountyName": "El Dorado",
+                    "County FIPS": "06017",
                     "QualityofLife": {
                         "Z-Score": -0.215801087,
                         "Rank": 18.0
@@ -964,6 +1002,7 @@
             {
                 "County": {
                     "CountyName": "Fresno",
+                    "County FIPS": "06019",
                     "QualityofLife": {
                         "Z-Score": 0.7070100383,
                         "Rank": 57.0
@@ -989,6 +1028,7 @@
             {
                 "County": {
                     "CountyName": "Glenn",
+                    "County FIPS": "06021",
                     "QualityofLife": {
                         "Z-Score": 0.2318517073,
                         "Rank": 45.0
@@ -1014,6 +1054,7 @@
             {
                 "County": {
                     "CountyName": "Humboldt",
+                    "County FIPS": "06023",
                     "QualityofLife": {
                         "Z-Score": -0.003346506,
                         "Rank": 28.0
@@ -1039,6 +1080,7 @@
             {
                 "County": {
                     "CountyName": "Imperial",
+                    "County FIPS": "06025",
                     "QualityofLife": {
                         "Z-Score": 0.2465585589,
                         "Rank": 46.0
@@ -1064,6 +1106,7 @@
             {
                 "County": {
                     "CountyName": "Inyo",
+                    "County FIPS": "06027",
                     "QualityofLife": {
                         "Z-Score": 0.2197779153,
                         "Rank": 43.0
@@ -1089,6 +1132,7 @@
             {
                 "County": {
                     "CountyName": "Kern",
+                    "County FIPS": "06029",
                     "QualityofLife": {
                         "Z-Score": 0.5647278428,
                         "Rank": 55.0
@@ -1114,6 +1158,7 @@
             {
                 "County": {
                     "CountyName": "Kings",
+                    "County FIPS": "06031",
                     "QualityofLife": {
                         "Z-Score": 0.230040338,
                         "Rank": 44.0
@@ -1139,6 +1184,7 @@
             {
                 "County": {
                     "CountyName": "Lake",
+                    "County FIPS": "06033",
                     "QualityofLife": {
                         "Z-Score": 0.3482242494,
                         "Rank": 48.0
@@ -1164,6 +1210,7 @@
             {
                 "County": {
                     "CountyName": "Lassen",
+                    "County FIPS": "06035",
                     "QualityofLife": {
                         "Z-Score": 0.2566739263,
                         "Rank": 47.0
@@ -1189,6 +1236,7 @@
             {
                 "County": {
                     "CountyName": "Los Angeles",
+                    "County FIPS": "06037",
                     "QualityofLife": {
                         "Z-Score": 0.1986334151,
                         "Rank": 41.0
@@ -1214,6 +1262,7 @@
             {
                 "County": {
                     "CountyName": "Madera",
+                    "County FIPS": "06039",
                     "QualityofLife": {
                         "Z-Score": 0.3908381426,
                         "Rank": 49.0
@@ -1239,6 +1288,7 @@
             {
                 "County": {
                     "CountyName": "Marin",
+                    "County FIPS": "06041",
                     "QualityofLife": {
                         "Z-Score": -0.593200273,
                         "Rank": 3.0
@@ -1264,6 +1314,7 @@
             {
                 "County": {
                     "CountyName": "Mariposa",
+                    "County FIPS": "06043",
                     "QualityofLife": {
                         "Z-Score": -0.069666093,
                         "Rank": 25.0
@@ -1289,6 +1340,7 @@
             {
                 "County": {
                     "CountyName": "Mendocino",
+                    "County FIPS": "06045",
                     "QualityofLife": {
                         "Z-Score": 0.1015095912,
                         "Rank": 38.0
@@ -1314,6 +1366,7 @@
             {
                 "County": {
                     "CountyName": "Merced",
+                    "County FIPS": "06047",
                     "QualityofLife": {
                         "Z-Score": 0.4907096549,
                         "Rank": 52.0
@@ -1339,6 +1392,7 @@
             {
                 "County": {
                     "CountyName": "Modoc",
+                    "County FIPS": "06049",
                     "QualityofLife": {
                         "Z-Score": 0.0654629601,
                         "Rank": 32.0
@@ -1364,6 +1418,7 @@
             {
                 "County": {
                     "CountyName": "Mono",
+                    "County FIPS": "06051",
                     "QualityofLife": {
                         "Z-Score": 0.0670618373,
                         "Rank": 34.0
@@ -1389,6 +1444,7 @@
             {
                 "County": {
                     "CountyName": "Monterey",
+                    "County FIPS": "06053",
                     "QualityofLife": {
                         "Z-Score": -0.089874594,
                         "Rank": 24.0
@@ -1414,6 +1470,7 @@
             {
                 "County": {
                     "CountyName": "Napa",
+                    "County FIPS": "06055",
                     "QualityofLife": {
                         "Z-Score": -0.385757228,
                         "Rank": 7.0
@@ -1439,6 +1496,7 @@
             {
                 "County": {
                     "CountyName": "Nevada",
+                    "County FIPS": "06057",
                     "QualityofLife": {
                         "Z-Score": -0.471036679,
                         "Rank": 5.0
@@ -1464,6 +1522,7 @@
             {
                 "County": {
                     "CountyName": "Orange",
+                    "County FIPS": "06059",
                     "QualityofLife": {
                         "Z-Score": -0.246276065,
                         "Rank": 13.0
@@ -1489,6 +1548,7 @@
             {
                 "County": {
                     "CountyName": "Placer",
+                    "County FIPS": "06061",
                     "QualityofLife": {
                         "Z-Score": -0.644378355,
                         "Rank": 1.0
@@ -1514,6 +1574,7 @@
             {
                 "County": {
                     "CountyName": "Plumas",
+                    "County FIPS": "06063",
                     "QualityofLife": {
                         "Z-Score": 0.5207720833,
                         "Rank": 54.0
@@ -1539,6 +1600,7 @@
             {
                 "County": {
                     "CountyName": "Riverside",
+                    "County FIPS": "06065",
                     "QualityofLife": {
                         "Z-Score": 0.0667495737,
                         "Rank": 33.0
@@ -1564,6 +1626,7 @@
             {
                 "County": {
                     "CountyName": "Sacramento",
+                    "County FIPS": "06067",
                     "QualityofLife": {
                         "Z-Score": 0.1023347512,
                         "Rank": 39.0
@@ -1589,6 +1652,7 @@
             {
                 "County": {
                     "CountyName": "San Benito",
+                    "County FIPS": "06069",
                     "QualityofLife": {
                         "Z-Score": -0.094102425,
                         "Rank": 23.0
@@ -1614,6 +1678,7 @@
             {
                 "County": {
                     "CountyName": "San Bernardino",
+                    "County FIPS": "06071",
                     "QualityofLife": {
                         "Z-Score": 0.4377816781,
                         "Rank": 51.0
@@ -1639,6 +1704,7 @@
             {
                 "County": {
                     "CountyName": "San Diego",
+                    "County FIPS": "06073",
                     "QualityofLife": {
                         "Z-Score": -0.243788249,
                         "Rank": 14.0
@@ -1664,6 +1730,7 @@
             {
                 "County": {
                     "CountyName": "San Francisco",
+                    "County FIPS": "06075",
                     "QualityofLife": {
                         "Z-Score": -0.290586482,
                         "Rank": 12.0
@@ -1689,6 +1756,7 @@
             {
                 "County": {
                     "CountyName": "San Joaquin",
+                    "County FIPS": "06077",
                     "QualityofLife": {
                         "Z-Score": 0.4144869048,
                         "Rank": 50.0
@@ -1714,6 +1782,7 @@
             {
                 "County": {
                     "CountyName": "San Luis Obispo",
+                    "County FIPS": "06079",
                     "QualityofLife": {
                         "Z-Score": -0.322696751,
                         "Rank": 10.0
@@ -1739,6 +1808,7 @@
             {
                 "County": {
                     "CountyName": "San Mateo",
+                    "County FIPS": "06081",
                     "QualityofLife": {
                         "Z-Score": -0.482978593,
                         "Rank": 4.0
@@ -1764,6 +1834,7 @@
             {
                 "County": {
                     "CountyName": "Santa Barbara",
+                    "County FIPS": "06083",
                     "QualityofLife": {
                         "Z-Score": -0.129390231,
                         "Rank": 21.0
@@ -1789,6 +1860,7 @@
             {
                 "County": {
                     "CountyName": "Santa Clara",
+                    "County FIPS": "06085",
                     "QualityofLife": {
                         "Z-Score": -0.428914225,
                         "Rank": 6.0
@@ -1814,6 +1886,7 @@
             {
                 "County": {
                     "CountyName": "Santa Cruz",
+                    "County FIPS": "06087",
                     "QualityofLife": {
                         "Z-Score": -0.225545776,
                         "Rank": 17.0
@@ -1839,6 +1912,7 @@
             {
                 "County": {
                     "CountyName": "Shasta",
+                    "County FIPS": "06089",
                     "QualityofLife": {
                         "Z-Score": -0.017848645,
                         "Rank": 27.0
@@ -1864,6 +1938,7 @@
             {
                 "County": {
                     "CountyName": "Sierra",
+                    "County FIPS": "06091",
                     "QualityofLife": {
                         "Z-Score": -0.037487238,
                         "Rank": 26.0
@@ -1889,6 +1964,7 @@
             {
                 "County": {
                     "CountyName": "Siskiyou",
+                    "County FIPS": "06093",
                     "QualityofLife": {
                         "Z-Score": 0.6436727593,
                         "Rank": 56.0
@@ -1914,6 +1990,7 @@
             {
                 "County": {
                     "CountyName": "Solano",
+                    "County FIPS": "06095",
                     "QualityofLife": {
                         "Z-Score": -0.110428049,
                         "Rank": 22.0
@@ -1939,6 +2016,7 @@
             {
                 "County": {
                     "CountyName": "Sonoma",
+                    "County FIPS": "06097",
                     "QualityofLife": {
                         "Z-Score": -0.368997805,
                         "Rank": 8.0
@@ -1964,6 +2042,7 @@
             {
                 "County": {
                     "CountyName": "Stanislaus",
+                    "County FIPS": "06099",
                     "QualityofLife": {
                         "Z-Score": 0.0854679779,
                         "Rank": 36.0
@@ -1989,6 +2068,7 @@
             {
                 "County": {
                     "CountyName": "Sutter",
+                    "County FIPS": "06101",
                     "QualityofLife": {
                         "Z-Score": 0.0075470431,
                         "Rank": 29.0
@@ -2014,6 +2094,7 @@
             {
                 "County": {
                     "CountyName": "Tehama",
+                    "County FIPS": "06103",
                     "QualityofLife": {
                         "Z-Score": 0.2033622517,
                         "Rank": 42.0
@@ -2039,6 +2120,7 @@
             {
                 "County": {
                     "CountyName": "Trinity",
+                    "County FIPS": "06105",
                     "QualityofLife": {
                         "Z-Score": 0.070903466,
                         "Rank": 35.0
@@ -2064,6 +2146,7 @@
             {
                 "County": {
                     "CountyName": "Tulare",
+                    "County FIPS": "06107",
                     "QualityofLife": {
                         "Z-Score": 0.5056379595,
                         "Rank": 53.0
@@ -2089,6 +2172,7 @@
             {
                 "County": {
                     "CountyName": "Tuolumne",
+                    "County FIPS": "06109",
                     "QualityofLife": {
                         "Z-Score": -0.328737749,
                         "Rank": 9.0
@@ -2114,6 +2198,7 @@
             {
                 "County": {
                     "CountyName": "Ventura",
+                    "County FIPS": "06111",
                     "QualityofLife": {
                         "Z-Score": -0.305563337,
                         "Rank": 11.0
@@ -2139,6 +2224,7 @@
             {
                 "County": {
                     "CountyName": "Yolo",
+                    "County FIPS": "06113",
                     "QualityofLife": {
                         "Z-Score": -0.230289821,
                         "Rank": 16.0
@@ -2164,6 +2250,7 @@
             {
                 "County": {
                     "CountyName": "Yuba",
+                    "County FIPS": "06115",
                     "QualityofLife": {
                         "Z-Score": 0.0930580374,
                         "Rank": 37.0
@@ -2196,6 +2283,7 @@
             {
                 "County": {
                     "CountyName": "Fairfield",
+                    "County FIPS": "09001",
                     "QualityofLife": {
                         "Z-Score": -0.130046981,
                         "Rank": 4.0
@@ -2221,6 +2309,7 @@
             {
                 "County": {
                     "CountyName": "Hartford",
+                    "County FIPS": "09003",
                     "QualityofLife": {
                         "Z-Score": 0.4601535967,
                         "Rank": 8.0
@@ -2246,6 +2335,7 @@
             {
                 "County": {
                     "CountyName": "Litchfield",
+                    "County FIPS": "09005",
                     "QualityofLife": {
                         "Z-Score": -0.487929397,
                         "Rank": 2.0
@@ -2271,6 +2361,7 @@
             {
                 "County": {
                     "CountyName": "Middlesex",
+                    "County FIPS": "09007",
                     "QualityofLife": {
                         "Z-Score": -0.609033594,
                         "Rank": 1.0
@@ -2296,6 +2387,7 @@
             {
                 "County": {
                     "CountyName": "New Haven",
+                    "County FIPS": "09009",
                     "QualityofLife": {
                         "Z-Score": 0.4498544805,
                         "Rank": 7.0
@@ -2321,6 +2413,7 @@
             {
                 "County": {
                     "CountyName": "New London",
+                    "County FIPS": "09011",
                     "QualityofLife": {
                         "Z-Score": 0.2038878493,
                         "Rank": 5.0
@@ -2346,6 +2439,7 @@
             {
                 "County": {
                     "CountyName": "Tolland",
+                    "County FIPS": "09013",
                     "QualityofLife": {
                         "Z-Score": -0.292048072,
                         "Rank": 3.0
@@ -2371,6 +2465,7 @@
             {
                 "County": {
                     "CountyName": "Windham",
+                    "County FIPS": "09015",
                     "QualityofLife": {
                         "Z-Score": 0.4051621172,
                         "Rank": 6.0
@@ -2403,6 +2498,7 @@
             {
                 "County": {
                     "CountyName": "Atlantic",
+                    "County FIPS": "34001",
                     "QualityofLife": {
                         "Z-Score": 0.2421436693,
                         "Rank": 15.0
@@ -2428,6 +2524,7 @@
             {
                 "County": {
                     "CountyName": "Bergen",
+                    "County FIPS": "34003",
                     "QualityofLife": {
                         "Z-Score": -0.310805098,
                         "Rank": 5.0
@@ -2453,6 +2550,7 @@
             {
                 "County": {
                     "CountyName": "Burlington",
+                    "County FIPS": "34005",
                     "QualityofLife": {
                         "Z-Score": -0.127669604,
                         "Rank": 9.0
@@ -2478,6 +2576,7 @@
             {
                 "County": {
                     "CountyName": "Camden",
+                    "County FIPS": "34007",
                     "QualityofLife": {
                         "Z-Score": 0.5568258767,
                         "Rank": 19.0
@@ -2503,6 +2602,7 @@
             {
                 "County": {
                     "CountyName": "Cape May",
+                    "County FIPS": "34009",
                     "QualityofLife": {
                         "Z-Score": -0.209027504,
                         "Rank": 8.0
@@ -2528,6 +2628,7 @@
             {
                 "County": {
                     "CountyName": "Cumberland",
+                    "County FIPS": "34011",
                     "QualityofLife": {
                         "Z-Score": 0.8559676785,
                         "Rank": 21.0
@@ -2553,6 +2654,7 @@
             {
                 "County": {
                     "CountyName": "Essex",
+                    "County FIPS": "34013",
                     "QualityofLife": {
                         "Z-Score": 0.570170903,
                         "Rank": 20.0
@@ -2578,6 +2680,7 @@
             {
                 "County": {
                     "CountyName": "Gloucester",
+                    "County FIPS": "34015",
                     "QualityofLife": {
                         "Z-Score": 0.3452989618,
                         "Rank": 18.0
@@ -2603,6 +2706,7 @@
             {
                 "County": {
                     "CountyName": "Hudson",
+                    "County FIPS": "34017",
                     "QualityofLife": {
                         "Z-Score": 0.3421764938,
                         "Rank": 17.0
@@ -2628,6 +2732,7 @@
             {
                 "County": {
                     "CountyName": "Hunterdon",
+                    "County FIPS": "34019",
                     "QualityofLife": {
                         "Z-Score": -0.655626857,
                         "Rank": 1.0
@@ -2653,6 +2758,7 @@
             {
                 "County": {
                     "CountyName": "Mercer",
+                    "County FIPS": "34021",
                     "QualityofLife": {
                         "Z-Score": 0.2182235543,
                         "Rank": 13.0
@@ -2678,6 +2784,7 @@
             {
                 "County": {
                     "CountyName": "Middlesex",
+                    "County FIPS": "34023",
                     "QualityofLife": {
                         "Z-Score": -0.10209282,
                         "Rank": 10.0
@@ -2703,6 +2810,7 @@
             {
                 "County": {
                     "CountyName": "Monmouth",
+                    "County FIPS": "34025",
                     "QualityofLife": {
                         "Z-Score": -0.310675215,
                         "Rank": 6.0
@@ -2728,6 +2836,7 @@
             {
                 "County": {
                     "CountyName": "Morris",
+                    "County FIPS": "34027",
                     "QualityofLife": {
                         "Z-Score": -0.580386472,
                         "Rank": 2.0
@@ -2753,6 +2862,7 @@
             {
                 "County": {
                     "CountyName": "Ocean",
+                    "County FIPS": "34029",
                     "QualityofLife": {
                         "Z-Score": -0.289414567,
                         "Rank": 7.0
@@ -2778,6 +2888,7 @@
             {
                 "County": {
                     "CountyName": "Passaic",
+                    "County FIPS": "34031",
                     "QualityofLife": {
                         "Z-Score": 0.3385842312,
                         "Rank": 16.0
@@ -2803,6 +2914,7 @@
             {
                 "County": {
                     "CountyName": "Salem",
+                    "County FIPS": "34033",
                     "QualityofLife": {
                         "Z-Score": 0.2340370697,
                         "Rank": 14.0
@@ -2828,6 +2940,7 @@
             {
                 "County": {
                     "CountyName": "Somerset",
+                    "County FIPS": "34035",
                     "QualityofLife": {
                         "Z-Score": -0.48489871,
                         "Rank": 3.0
@@ -2853,6 +2966,7 @@
             {
                 "County": {
                     "CountyName": "Sussex",
+                    "County FIPS": "34037",
                     "QualityofLife": {
                         "Z-Score": -0.480782739,
                         "Rank": 4.0
@@ -2878,6 +2992,7 @@
             {
                 "County": {
                     "CountyName": "Union",
+                    "County FIPS": "34039",
                     "QualityofLife": {
                         "Z-Score": -0.053543446,
                         "Rank": 12.0
@@ -2903,6 +3018,7 @@
             {
                 "County": {
                     "CountyName": "Warren",
+                    "County FIPS": "34041",
                     "QualityofLife": {
                         "Z-Score": -0.098505406,
                         "Rank": 11.0
@@ -2935,6 +3051,7 @@
             {
                 "County": {
                     "CountyName": "Albany",
+                    "County FIPS": "36001",
                     "QualityofLife": {
                         "Z-Score": 0.0212405703,
                         "Rank": 35.0
@@ -2960,6 +3077,7 @@
             {
                 "County": {
                     "CountyName": "Allegany",
+                    "County FIPS": "36003",
                     "QualityofLife": {
                         "Z-Score": 0.1300787841,
                         "Rank": 39.0
@@ -2985,6 +3103,7 @@
             {
                 "County": {
                     "CountyName": "Bronx",
+                    "County FIPS": "36005",
                     "QualityofLife": {
                         "Z-Score": 1.4162266402,
                         "Rank": 62.0
@@ -3010,6 +3129,7 @@
             {
                 "County": {
                     "CountyName": "Broome",
+                    "County FIPS": "36007",
                     "QualityofLife": {
                         "Z-Score": 0.2890496256,
                         "Rank": 53.0
@@ -3035,6 +3155,7 @@
             {
                 "County": {
                     "CountyName": "Cattaraugus",
+                    "County FIPS": "36009",
                     "QualityofLife": {
                         "Z-Score": 0.7198104141,
                         "Rank": 60.0
@@ -3060,6 +3181,7 @@
             {
                 "County": {
                     "CountyName": "Cayuga",
+                    "County FIPS": "36011",
                     "QualityofLife": {
                         "Z-Score": -0.335006557,
                         "Rank": 11.0
@@ -3085,6 +3207,7 @@
             {
                 "County": {
                     "CountyName": "Chautauqua",
+                    "County FIPS": "36013",
                     "QualityofLife": {
                         "Z-Score": 0.4360390567,
                         "Rank": 58.0
@@ -3110,6 +3233,7 @@
             {
                 "County": {
                     "CountyName": "Chemung",
+                    "County FIPS": "36015",
                     "QualityofLife": {
                         "Z-Score": 0.2745658195,
                         "Rank": 52.0
@@ -3135,6 +3259,7 @@
             {
                 "County": {
                     "CountyName": "Chenango",
+                    "County FIPS": "36017",
                     "QualityofLife": {
                         "Z-Score": -0.013872179,
                         "Rank": 28.0
@@ -3160,6 +3285,7 @@
             {
                 "County": {
                     "CountyName": "Clinton",
+                    "County FIPS": "36019",
                     "QualityofLife": {
                         "Z-Score": 0.130949363,
                         "Rank": 40.0
@@ -3185,6 +3311,7 @@
             {
                 "County": {
                     "CountyName": "Columbia",
+                    "County FIPS": "36021",
                     "QualityofLife": {
                         "Z-Score": -0.54099512,
                         "Rank": 6.0
@@ -3210,6 +3337,7 @@
             {
                 "County": {
                     "CountyName": "Cortland",
+                    "County FIPS": "36023",
                     "QualityofLife": {
                         "Z-Score": 0.1269127012,
                         "Rank": 38.0
@@ -3235,6 +3363,7 @@
             {
                 "County": {
                     "CountyName": "Delaware",
+                    "County FIPS": "36025",
                     "QualityofLife": {
                         "Z-Score": -0.141352344,
                         "Rank": 23.0
@@ -3260,6 +3389,7 @@
             {
                 "County": {
                     "CountyName": "Dutchess",
+                    "County FIPS": "36027",
                     "QualityofLife": {
                         "Z-Score": -0.195407813,
                         "Rank": 20.0
@@ -3285,6 +3415,7 @@
             {
                 "County": {
                     "CountyName": "Erie",
+                    "County FIPS": "36029",
                     "QualityofLife": {
                         "Z-Score": 0.3787867552,
                         "Rank": 56.0
@@ -3310,6 +3441,7 @@
             {
                 "County": {
                     "CountyName": "Essex",
+                    "County FIPS": "36031",
                     "QualityofLife": {
                         "Z-Score": -0.256786743,
                         "Rank": 15.0
@@ -3335,6 +3467,7 @@
             {
                 "County": {
                     "CountyName": "Franklin",
+                    "County FIPS": "36033",
                     "QualityofLife": {
                         "Z-Score": 0.4061520863,
                         "Rank": 57.0
@@ -3360,6 +3493,7 @@
             {
                 "County": {
                     "CountyName": "Fulton",
+                    "County FIPS": "36035",
                     "QualityofLife": {
                         "Z-Score": 0.2538534525,
                         "Rank": 49.0
@@ -3385,6 +3519,7 @@
             {
                 "County": {
                     "CountyName": "Genesee",
+                    "County FIPS": "36037",
                     "QualityofLife": {
                         "Z-Score": -0.044453843,
                         "Rank": 26.0
@@ -3410,6 +3545,7 @@
             {
                 "County": {
                     "CountyName": "Greene",
+                    "County FIPS": "36039",
                     "QualityofLife": {
                         "Z-Score": 0.2000554835,
                         "Rank": 43.0
@@ -3435,6 +3571,7 @@
             {
                 "County": {
                     "CountyName": "Hamilton",
+                    "County FIPS": "36041",
                     "QualityofLife": {
                         "Z-Score": -1.024963964,
                         "Rank": 1.0
@@ -3460,6 +3597,7 @@
             {
                 "County": {
                     "CountyName": "Herkimer",
+                    "County FIPS": "36043",
                     "QualityofLife": {
                         "Z-Score": -0.004650534,
                         "Rank": 30.0
@@ -3485,6 +3623,7 @@
             {
                 "County": {
                     "CountyName": "Jefferson",
+                    "County FIPS": "36045",
                     "QualityofLife": {
                         "Z-Score": -0.004799375,
                         "Rank": 29.0
@@ -3510,6 +3649,7 @@
             {
                 "County": {
                     "CountyName": "Kings",
+                    "County FIPS": "36047",
                     "QualityofLife": {
                         "Z-Score": 0.2047892138,
                         "Rank": 44.0
@@ -3535,6 +3675,7 @@
             {
                 "County": {
                     "CountyName": "Lewis",
+                    "County FIPS": "36049",
                     "QualityofLife": {
                         "Z-Score": -0.371588903,
                         "Rank": 9.0
@@ -3560,6 +3701,7 @@
             {
                 "County": {
                     "CountyName": "Livingston",
+                    "County FIPS": "36051",
                     "QualityofLife": {
                         "Z-Score": -0.283020107,
                         "Rank": 12.0
@@ -3585,6 +3727,7 @@
             {
                 "County": {
                     "CountyName": "Madison",
+                    "County FIPS": "36053",
                     "QualityofLife": {
                         "Z-Score": -0.387183105,
                         "Rank": 8.0
@@ -3610,6 +3753,7 @@
             {
                 "County": {
                     "CountyName": "Monroe",
+                    "County FIPS": "36055",
                     "QualityofLife": {
                         "Z-Score": 0.2578025485,
                         "Rank": 50.0
@@ -3635,6 +3779,7 @@
             {
                 "County": {
                     "CountyName": "Montgomery",
+                    "County FIPS": "36057",
                     "QualityofLife": {
                         "Z-Score": 0.2651197531,
                         "Rank": 51.0
@@ -3660,6 +3805,7 @@
             {
                 "County": {
                     "CountyName": "Nassau",
+                    "County FIPS": "36059",
                     "QualityofLife": {
                         "Z-Score": -0.281477433,
                         "Rank": 13.0
@@ -3685,6 +3831,7 @@
             {
                 "County": {
                     "CountyName": "New York",
+                    "County FIPS": "36061",
                     "QualityofLife": {
                         "Z-Score": 0.00817422,
                         "Rank": 31.0
@@ -3710,6 +3857,7 @@
             {
                 "County": {
                     "CountyName": "Niagara",
+                    "County FIPS": "36063",
                     "QualityofLife": {
                         "Z-Score": 0.4413181528,
                         "Rank": 59.0
@@ -3735,6 +3883,7 @@
             {
                 "County": {
                     "CountyName": "Oneida",
+                    "County FIPS": "36065",
                     "QualityofLife": {
                         "Z-Score": 0.2436030075,
                         "Rank": 47.0
@@ -3760,6 +3909,7 @@
             {
                 "County": {
                     "CountyName": "Onondaga",
+                    "County FIPS": "36067",
                     "QualityofLife": {
                         "Z-Score": -0.025426647,
                         "Rank": 27.0
@@ -3785,6 +3935,7 @@
             {
                 "County": {
                     "CountyName": "Ontario",
+                    "County FIPS": "36069",
                     "QualityofLife": {
                         "Z-Score": -0.406105639,
                         "Rank": 7.0
@@ -3810,6 +3961,7 @@
             {
                 "County": {
                     "CountyName": "Orange",
+                    "County FIPS": "36071",
                     "QualityofLife": {
                         "Z-Score": 0.0177311998,
                         "Rank": 34.0
@@ -3835,6 +3987,7 @@
             {
                 "County": {
                     "CountyName": "Orleans",
+                    "County FIPS": "36073",
                     "QualityofLife": {
                         "Z-Score": 0.2346008644,
                         "Rank": 46.0
@@ -3860,6 +4013,7 @@
             {
                 "County": {
                     "CountyName": "Oswego",
+                    "County FIPS": "36075",
                     "QualityofLife": {
                         "Z-Score": 0.1566811517,
                         "Rank": 42.0
@@ -3885,6 +4039,7 @@
             {
                 "County": {
                     "CountyName": "Otsego",
+                    "County FIPS": "36077",
                     "QualityofLife": {
                         "Z-Score": -0.243787587,
                         "Rank": 18.0
@@ -3910,6 +4065,7 @@
             {
                 "County": {
                     "CountyName": "Putnam",
+                    "County FIPS": "36079",
                     "QualityofLife": {
                         "Z-Score": -0.356535666,
                         "Rank": 10.0
@@ -3935,6 +4091,7 @@
             {
                 "County": {
                     "CountyName": "Queens",
+                    "County FIPS": "36081",
                     "QualityofLife": {
                         "Z-Score": 0.032093167,
                         "Rank": 36.0
@@ -3960,6 +4117,7 @@
             {
                 "County": {
                     "CountyName": "Rensselaer",
+                    "County FIPS": "36083",
                     "QualityofLife": {
                         "Z-Score": 0.0172725488,
                         "Rank": 33.0
@@ -3985,6 +4143,7 @@
             {
                 "County": {
                     "CountyName": "Richmond",
+                    "County FIPS": "36085",
                     "QualityofLife": {
                         "Z-Score": 0.3644261108,
                         "Rank": 55.0
@@ -4010,6 +4169,7 @@
             {
                 "County": {
                     "CountyName": "Rockland",
+                    "County FIPS": "36087",
                     "QualityofLife": {
                         "Z-Score": -0.567205632,
                         "Rank": 3.0
@@ -4035,6 +4195,7 @@
             {
                 "County": {
                     "CountyName": "St. Lawrence",
+                    "County FIPS": "36089",
                     "QualityofLife": {
                         "Z-Score": 0.208207744,
                         "Rank": 45.0
@@ -4060,6 +4221,7 @@
             {
                 "County": {
                     "CountyName": "Saratoga",
+                    "County FIPS": "36091",
                     "QualityofLife": {
                         "Z-Score": -0.55867853,
                         "Rank": 4.0
@@ -4085,6 +4247,7 @@
             {
                 "County": {
                     "CountyName": "Schenectady",
+                    "County FIPS": "36093",
                     "QualityofLife": {
                         "Z-Score": 0.2941074466,
                         "Rank": 54.0
@@ -4110,6 +4273,7 @@
             {
                 "County": {
                     "CountyName": "Schoharie",
+                    "County FIPS": "36095",
                     "QualityofLife": {
                         "Z-Score": -0.141722524,
                         "Rank": 22.0
@@ -4135,6 +4299,7 @@
             {
                 "County": {
                     "CountyName": "Schuyler",
+                    "County FIPS": "36097",
                     "QualityofLife": {
                         "Z-Score": 0.0520164643,
                         "Rank": 37.0
@@ -4160,6 +4325,7 @@
             {
                 "County": {
                     "CountyName": "Seneca",
+                    "County FIPS": "36099",
                     "QualityofLife": {
                         "Z-Score": -0.248612555,
                         "Rank": 17.0
@@ -4185,6 +4351,7 @@
             {
                 "County": {
                     "CountyName": "Steuben",
+                    "County FIPS": "36101",
                     "QualityofLife": {
                         "Z-Score": 0.0166820028,
                         "Rank": 32.0
@@ -4210,6 +4377,7 @@
             {
                 "County": {
                     "CountyName": "Suffolk",
+                    "County FIPS": "36103",
                     "QualityofLife": {
                         "Z-Score": -0.273603495,
                         "Rank": 14.0
@@ -4235,6 +4403,7 @@
             {
                 "County": {
                     "CountyName": "Sullivan",
+                    "County FIPS": "36105",
                     "QualityofLife": {
                         "Z-Score": 0.8137922707,
                         "Rank": 61.0
@@ -4260,6 +4429,7 @@
             {
                 "County": {
                     "CountyName": "Tioga",
+                    "County FIPS": "36107",
                     "QualityofLife": {
                         "Z-Score": -0.059005228,
                         "Rank": 25.0
@@ -4285,6 +4455,7 @@
             {
                 "County": {
                     "CountyName": "Tompkins",
+                    "County FIPS": "36109",
                     "QualityofLife": {
                         "Z-Score": -0.238874878,
                         "Rank": 19.0
@@ -4310,6 +4481,7 @@
             {
                 "County": {
                     "CountyName": "Ulster",
+                    "County FIPS": "36111",
                     "QualityofLife": {
                         "Z-Score": -0.111341708,
                         "Rank": 24.0
@@ -4335,6 +4507,7 @@
             {
                 "County": {
                     "CountyName": "Warren",
+                    "County FIPS": "36113",
                     "QualityofLife": {
                         "Z-Score": -0.544138225,
                         "Rank": 5.0
@@ -4360,6 +4533,7 @@
             {
                 "County": {
                     "CountyName": "Washington",
+                    "County FIPS": "36115",
                     "QualityofLife": {
                         "Z-Score": 0.1401969757,
                         "Rank": 41.0
@@ -4385,6 +4559,7 @@
             {
                 "County": {
                     "CountyName": "Wayne",
+                    "County FIPS": "36117",
                     "QualityofLife": {
                         "Z-Score": 0.2534256471,
                         "Rank": 48.0
@@ -4410,6 +4585,7 @@
             {
                 "County": {
                     "CountyName": "Westchester",
+                    "County FIPS": "36119",
                     "QualityofLife": {
                         "Z-Score": -0.179559128,
                         "Rank": 21.0
@@ -4435,6 +4611,7 @@
             {
                 "County": {
                     "CountyName": "Wyoming",
+                    "County FIPS": "36121",
                     "QualityofLife": {
                         "Z-Score": -0.249053133,
                         "Rank": 16.0
@@ -4460,6 +4637,7 @@
             {
                 "County": {
                     "CountyName": "Yates",
+                    "County FIPS": "36123",
                     "QualityofLife": {
                         "Z-Score": -0.716552645,
                         "Rank": 2.0

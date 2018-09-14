@@ -5,9 +5,11 @@ from glob2 import glob
 import os
 import pandas as pd
 import json
+import pymongo
 from pymongo import MongoClient
 from bson.binary import Binary
 #----------------------------------------------------------------#
+#Siva : 9/13/2018. Updated to create one database and use the mlab cloud mongodb.
 
 def JSON_from_excel():
         filePath = ""
@@ -59,6 +61,7 @@ def JSON_from_excel():
 
                             HealthyCounty = {
                                 "CountyName" : sh.cell(row_index, 2 ).value,
+                                "County FIPS" : sh.cell(row_index, 0 ).value,
                                 "QualityofLife": QualityofLife,
                                 "HealthBehaviours" : HealthBehaviours,
                                 "ClinicalCare" : ClinicalCare,
@@ -83,18 +86,36 @@ def JSON_from_excel():
         jsonfile = "StateCountyData" + '.json'
         with open(jsonfile, 'w') as f:
             json.dump(StateList, f, indent = 4)
-
-        client = MongoClient('localhost',27017) # need to find for Heroku
-        db = client.Category
+        #connection for local host
+        #conn = 'mongodb://localhost:27017'
+        #client = pymongo.MongoClient(conn)
+        #db=client.heathi_db
+        
+        #create list of categories.
         Category = ["QualityofLife","EconomicFactors","ClinicalCare","HealthBehaviours","PhysicalEnvironment"]
+        #Create a dictionary with the list Category.
         dropdown = {"cat" : Category }
-        db.Category.drop()
 
-        db.Category.insert(dropdown)
+        # Connection for remote host
+        ## mongodb://<dbuser>:<dbpassword>@ds255332.mlab.com:55332/healthi_db
+        #conn is the mongodb_uri.
+        conn = 'mongodb://<dbuser>:<dbpassword>@ds255332.mlab.com:55332/healthi_db'
+        client = pymongo.MongoClient(conn,ConnectTimeoutMS=30000)
+        ##rcode client = MongoClient('localhost',27017) # need to find for Heroku
+        ##rcode db = client.healthi_db
+        ##rcode db = client.Category
+        db = client.get_default_database()
+         
+        #create collection Category
+        category = db.Category
+        category.drop()
+        #insert collection Category.
+        category.insert(dropdown)
 
-        db = client.State
-        state = db.State
+        #rcode db = client.State
+        #drop/create collection State.
         db.State.drop()
+        state = db.State
         result = state.insert_many(StateList)
         print("Multiple States {0}".format(result.inserted_ids))
        
