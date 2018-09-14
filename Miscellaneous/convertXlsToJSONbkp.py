@@ -1,21 +1,31 @@
 #-----------------Import Dependencies----------------------------# 
 import xlrd
+import csv
 from glob2 import glob
+import os
+import pandas as pd
 import json
 import pymongo
 from pymongo import MongoClient
-#--------------------------------------------------------------------------------#
+from bson.binary import Binary
+#----------------------------------------------------------------#
+#Siva : 9/13/2018. Updated to create one database and use the mlab cloud mongodb.
+
 def JSON_from_excel():
         filePath = ""
-        xlsFilesOnly = glob(filePath+"*.xls") # parse all xls file(s) only
+        xlsFilesOnly = glob(filePath+"*.xls")# parse all xls file(s) only
         StateList = []
         for xlsfile in xlsFilesOnly:
+            # xlsfilename = xlsfile.split(" ") # get the year of the file
+            # year = xlsfilename[0]
             yearReported = xlsfile[:4]
-            wb = xlrd.open_workbook(xlsfile,ragged_rows = True) 
+            wb = xlrd.open_workbook(xlsfile,ragged_rows = True)
+            
             if (wb != None):    
                 sh = wb.sheet_by_name('OutcomesFactorsSubRankings') 
                 CountyList = []
                 if (sh != None): 
+
                     for row_index in range(sh.nrows):
                         HealthyCounty = {}
                         if(row_index > 2 ):
@@ -72,47 +82,49 @@ def JSON_from_excel():
                                     "Counties" : CountyList                      
                                 }
                         StateList.append(State)
-        
-        #Creating a json file to display the jsonified data                
+                        # print(State)
         jsonfile = "StateCountyData" + '.json'
         with open(jsonfile, 'w') as f:
             json.dump(StateList, f, indent = 4)
-
-        #Connection for local host
-        # conn = 'mongodb://localhost:27017'
-        # client = pymongo.MongoClient(conn)
-        # db=client.heathi_db
+        #connection for local host
+        #conn = 'mongodb://localhost:27017'
+        #client = pymongo.MongoClient(conn)
+        #db=client.heathi_db
         
-        #Connection for remote host
-        conn = 'mongodb://<dbuser>:<dbpassword>@ds255332.mlab.com:55332/healthi_db'
-        client = pymongo.MongoClient(conn,ConnectTimeoutMS=30000)
-        db = client.get_default_database()
-
-        #create list of categories
+        #create list of categories.
         Category = ["QualityofLife","EconomicFactors","ClinicalCare","HealthBehaviours","PhysicalEnvironment"]
         #Create a dictionary with the list Category.
         dropdown = {"cat" : Category }
 
-        #drop/create collection Category
-        db.Category.drop()
+        # Connection for remote host
+        ## mongodb://<dbuser>:<dbpassword>@ds255332.mlab.com:55332/healthi_db
+        #conn is the mongodb_uri.
+        conn = 'mongodb://<dbuser>:<dbpassword>@ds255332.mlab.com:55332/healthi_db'
+        client = pymongo.MongoClient(conn,ConnectTimeoutMS=30000)
+        ##rcode client = MongoClient('localhost',27017) # need to find for Heroku
+        ##rcode db = client.healthi_db
+        ##rcode db = client.Category
+        db = client.get_default_database()
+         
+        #create collection Category
         category = db.Category
-        #insert into Category collection
+        category.drop()
+        #insert collection Category.
         category.insert(dropdown)
 
+        #rcode db = client.State
         #drop/create collection State.
         db.State.drop()
         state = db.State
-        #insert into State collection
         result = state.insert_many(StateList)
         print("Multiple States {0}".format(result.inserted_ids))
+       
+        for item in db.State.find():
+            # if ('StateName' in item and 'Counties' in item):
+            print(item)
+        # db.State.find().pretty()
         
 JSON_from_excel()
-
-#Siva : 9/13/2018. Updated to create one database and use the mlab cloud mongodb.
-#Pragati : 9/14/2018. Updated and cleaned the code (Note: Verified by re-running the code
-#          locally. 
-#          Note: Did all this at this state to avoid any last minutes bug & error.
-
 
         
 
