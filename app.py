@@ -14,7 +14,6 @@ app = Flask(__name__)
 
 # # create / Use database
 # # db = client.healthi_db
-# db = client.heathi_db
 
 #------------------------------------------------------------------------------------#
 # MLab MongoDB connection #
