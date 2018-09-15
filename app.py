@@ -12,17 +12,18 @@ app = Flask(__name__)
 # conn = "mongodb://localhost:27017"
 # client = pymongo.MongoClient(conn)
 
-# # create / Use database
-# db = client.HealthDB
+# # # create / Use database
+# db = client.healthi_db
 
 #------------------------------------------------------------------------------------#
 # MLab MongoDB connection #
 #------------------------------------------------------------------------------------#
-conn = 'mongodb://healthi_admin:healthisrs9=@ds255332.mlab.com:55332/healthi_db'
+conn = 'mongodb://<add user Pwd here>@ds255332.mlab.com:55332/healthi_db'
 client = pymongo.MongoClient(conn,ConnectTimeoutMS=30000)
+db = client.get_default_database()
 
 #Database connection
-db = client.get_default_database()
+
 # db = client.get_database('healthi_db')
 
 # Home Page
@@ -106,8 +107,13 @@ def details(state):
 # Initiate Flask app
 #------------------------------------------------------------------------------------#
 if __name__=="__main__":
-    connect_args={'check_same_thread':False}
+    #connect_args={'check_same_thread':False}
     app.run(debug=True)
 
 #Pragati : 9/14/2018. Updated to create 4 routes and modified 1 route.
-#Tested mlab cloud mongodb as well as with local mongodb.    
+#Tested mlab cloud mongodb as well as with local mongodb. 
+# Updated & Tested Riicha : 9/15/2018 Web Scaped & Added # 1. Lat & Long of counties.2. Link to Wiki 
+# 3. population & 4. Area etc
+
+
+#    
