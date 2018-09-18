@@ -1,8 +1,10 @@
-// Drop down menu for state selection
+// variables for drop down menu for state and county selection
 
 var stateurl = '/states';
 var statedata;
 var countydata;
+
+// load state drop down from Flask Route
 
 Plotly.d3.json(stateurl,function(error,statedata){
   if (error) {
@@ -20,24 +22,29 @@ Plotly.d3.json(stateurl,function(error,statedata){
 
 })
 
+// action on event change on state drop down and county
 
  $("#stateselect").change( function(){
     statedata = $(this).val();
     $("#countyselect").empty();
+
+    // function to populate county data based on dynamic selection of state
+
     populatecounty(statedata);
 
     Plotly.d3.select('#countyselect').on('change',(function(){
-      countydata = this.options[this.selectedIndex].value;
-      // $("#county-background").empty();
-      // Use `.html("") to clear any existing metadata
-      // document.querySelector("#county-background").innerHTML = "";
+    countydata = this.options[this.selectedIndex].value;
+    
+    // function to populate county ranking  based on dynamic selection of state and county
 
-      populatecountydetails(statedata,countydata)
+    populatecountydetails(statedata,countydata)
     })
   )
 });
 
 // populatechart()
+
+// begin function populatecounty(statename) 
 
 function populatecounty(statename) {
 
@@ -61,6 +68,11 @@ function populatecounty(statename) {
     
     })
 }
+
+// end function populatecounty(statename) 
+
+
+// begin function populatecountydetails(statedata,countydata)
 
 function  populatecountydetails(statedata,countydata){    
   console.log(countydata)
@@ -102,6 +114,8 @@ function  populatecountydetails(statedata,countydata){
           })  
 
         }
+
+      // end function populatecountydetails(statedata,countydata)
 
         console.log(data_list)
 
