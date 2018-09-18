@@ -18,7 +18,7 @@ app = Flask(__name__)
 #------------------------------------------------------------------------------------#
 # MLab MongoDB connection #
 #------------------------------------------------------------------------------------#
-conn = 'mongodb://<dbuser>:<dbpassword>@ds255332.mlab.com:55332/healthi_db'
+conn = 'mongodb://healthi_admin:healthisrs9=@ds255332.mlab.com:55332/healthi_db'
 client = pymongo.MongoClient(conn,ConnectTimeoutMS=30000)
 
 # #Database connection
@@ -76,7 +76,7 @@ def county(state):
             State_Counties = item['Counties']
             for County in State_Counties:
                 county_list.append(County['County']['CountyName'])
-            County_dict['County Names'] = county_list          
+            County_dict['CountyNames'] = county_list          
             sample_list.append(County_dict)
     return jsonify(sample_list)   
 
@@ -141,3 +141,5 @@ if __name__=="__main__":
 #Pragati : 9/15/2018. Updated the code and include two routes: /routes to display
 #          all the available routes and /countygeodetails/<state> to display
 #          geographical & demographical information.
+#Supriya : 9/17/2018. Updated line #79 for Java Script Logic; # 42 for correct display 
+#          of county details route.
