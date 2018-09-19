@@ -226,6 +226,15 @@ function  populatecountydetails(statedata,countydata){
 
       })
 
+      if(mapstate == "California"){
+        myMap.setView([36.7783,-119.4179],6)
+      } else if(mapstate == "Alaska"){
+        myMap.setView([64.2008,-149.4937],6)
+      }
+      else {
+        myMap.setView([40.7128,-74.0060],6)
+      }
+
     }
     
 
