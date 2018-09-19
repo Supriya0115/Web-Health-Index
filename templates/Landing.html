@@ -5,14 +5,18 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
   <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-  <link rel= "stylesheet" type= "text/css" href= "static/styles.css">
-  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.7.3/d3.min.js"></script> -->
-  <!-- <script type="text/javascript" src="static/index.js"></script> -->
-  <!-- <script type="text/javascript" src="static/countyselection.js"></script>
-  <script type="text/javascript" src="static/styles.css"></script> -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+
+    <!-- Leaflet CSS & JS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.3/dist/leaflet.css"
+    integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ=="
+    crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.3.3/dist/leaflet.js"
+    integrity="sha512-tAGcCfR4Sc5ZP5ZoVz0quoZDYX5aCtEm/eu1KhSLj2c9eFrylXZknQYmxUssFaVJKvvc0dJQixhGjG2yXWiV9Q=="
+    crossorigin=""></script>
+
+  <!-- Inline Styling -->
   <style>
         .jumbotron { 
             background-color: grey;
@@ -70,17 +74,19 @@
         .row.content {height: 450px}
         
         /* Set gray background color and 100% height */
-        .sidenav {
-        padding-top: 20px;
-        background-color: #f1f1f1;
-        height: 100%;
+        #map, .sidenav {
+        padding-top: 10px;
+        /* background-color: #f1f1f1; */
+        height: 95%;
         }
 
+        tr:hover td {background:olivedrab}
    </style>
+
 </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
-        <!-- Navigation -->
-
+        
+    <!-- Navigation -->
         <nav class="navbar navbar-default navbar-fixed-top">
                 <div class="container">
                   <div class="navbar-header">
@@ -95,58 +101,81 @@
                     <ul class="nav navbar-nav navbar-right">
                       <li><a href="#county">State and County Selector</a></li>
                       <li><a href="#attribute">Attribute Selector</a></li>
-                      <li><a href="#portfolio">Portfolio</a></li>
+                      <li><a href="#portfolio">Project</a></li>
                     </ul>
                   </div>
                 </div>
         </nav>
 
-
-
-        <!-- Use Case 1 -->
-
+    <!-- Use Case 1 : State and County Drop down for ranks and plots -->
         <div class="jumbotron text-center"> <div id="county" class="container">
 
+            <!-- Marquee tag -->
                 <div>
                         <h3>
-                        <marquee>Some text + .svg can scroll here</marquee>
+                            <marquee>Some text + .svg can scroll here</marquee>
                             <img id="leafImage">
                         </h3>
+                </div>
+
+            <!-- Drop down panel -->
+            <div class="row content">
+                <div class="col-md-4 text-center">                    
+                        <select class="form-control" id="stateselect"> <option value="empty">Select State</option>
+                        </select>
+                    <hr>
+                        <select class="form-control" id="countyselect">
+                                    <option value="empty">Select County</option>
+                        </select>
+                    <!-- County Background Panel -->
+                    <div class="row">
+                            <div class="col-md-12">
+                                <div class="metadata-of-sample">
+
+                                    <h4 id="count" style="color: lightgreen"></h4>
+                                    <hr>
+                                    <table id="county-background" class="table table-hover">
+                                        <thead>
+                                            <tr id="sample-metadata">
+                                                <td align="left" style="color: orange"><strong> Attribute </strong></td>
+                                                <td align="left" style="color: orange"><strong> County Rank</strong></td>
+                                            </tr>
+                                        </thead>
+                                        <tbody align="left">
+
+                                        </tbody>
+                                    </table>
+
+                                </div>
+                            </div>
                     </div>
 
-            <div class="row content">
-
-                <div class="col-sm-4 text-center">
-
-                        <select class="form-control" id="stateselect" onchange="optionChanged(this.value)">
-                                <option value="empty">Select State</option>
-                        </select>
+                </div>
                 
-                <hr>
+                <div class="col-md-1"> </div>
 
-                        <select class="form-control" id="countyselect" onchange="optionChanged(this.value)">
-                                <option value="empty">Select County</option>
-                        </select>
+            
 
-
+                <!-- Plot Panel -->
+                <div class="col-md-7 sidenav">
+                        <div>
+                                <select class="form-control" id="attributerank"> 
+                                    <option value="empty">Select Attribute</option>
+                                    <option value = "Quality of Life">Quality of Life</option>
+                                    <option value = "Economic Factors">Economic Factors</option>
+                                    <option value = "Physical Environment">Physical Environment</option>
+                                    <option value = "Health Behaviours">Health Behaviours</option>
+                                    <option value = "Clinical Care">Clinical Care</option>
+                                </select>
+                        </div> <br>
+                    <div id = "map"></div>
                 </div>
-                <div class="col-sm-1">
-
-                </div>
-                <div class="col-sm-7 sidenav">
 
                 </div>
 
             </div>
-        </div>
 
         <hr>
-
-        <!-- Plot Area -->
-
-        <div class="container-fluid">
-              
-        </div>
 
         <!-- Use Case 2 -->
 
@@ -177,6 +206,7 @@
 
         <hr>
 
+        <!-- Project Area -->
         <div class="container-fluid text-center"> <div id="portfolio" class="container-fluid">
                 <h2>Our Visualizations!</h2>
                 <h4>What we have created</h4>
@@ -206,11 +236,19 @@
 
 </body>
 
+<!-- Script Libraries -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.7.3/d3.min.js"></script> -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
-<!-- <script type="text/javascript" src="static/countyselection.js"></script> -->
 <script src="{{ url_for('static', filename='countyselection.js') }}"></script>
+
+  <!-- API key -->
+  <!-- <script type="text/javascript" src="config.js"></script> -->
+  <!-- <script src="{{ url_for('static', filename='config.js') }}"></script> -->
+
+  <!-- Our JS -->
+  <!-- <script type="text/javascript" src="plot.js"></script> -->
+  <!-- <script src="{{ url_for('static', filename='plot.js') }}"></script> -->
+
 
 </html>
