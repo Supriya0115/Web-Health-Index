@@ -75,9 +75,9 @@
         
         /* Set gray background color and 100% height */
         #map, .sidenav {
-        padding-top: 20px;
+        padding-top: 10px;
         /* background-color: #f1f1f1; */
-        height: 100%;
+        height: 95%;
         }
 
         tr:hover td {background:olivedrab}
@@ -154,8 +154,20 @@
                 
                 <div class="col-md-1"> </div>
 
+            
+
                 <!-- Plot Panel -->
                 <div class="col-md-7 sidenav">
+                        <div>
+                                <select class="form-control" id="attributerank"> 
+                                    <option value="empty">Select Attribute</option>
+                                    <option value = "Quality of Life">Quality of Life</option>
+                                    <option value = "Economic Factors">Economic Factors</option>
+                                    <option value = "Physical Environment">Physical Environment</option>
+                                    <option value = "Health Behaviours">Health Behaviours</option>
+                                    <option value = "Clinical Care">Clinical Care</option>
+                                </select>
+                        </div> <br>
                     <div id = "map"></div>
                 </div>
 

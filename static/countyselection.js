@@ -128,6 +128,8 @@ function  populatecountydetails(statedata,countydata){
 
 
 
+
+
   // Creating our initial map object
   // We set the longitude, latitude, and the starting zoom level
   // This gets inserted into the div with an id of 'map'
@@ -149,20 +151,57 @@ function  populatecountydetails(statedata,countydata){
 
     var clickCircle;
 
+    var RankMarkers = [];
+
+
     $(document).ready(function(){ 
-      $('#stateselect').change(function(){ 
-        var mapstate = $(this).val();
-        populatemap(mapstate)
-      });
+        
+              $('#stateselect').change(function(){ 
+                var mapstate = $(this).val();
+                populatemap(mapstate) 
+              });
+
     });
 
 
     function markerSize(population) {
-      return population / 40;
+      return population / 40; 
     }
 
 
+    var attr_choice
+
+    console.log(attr_choice)
+
+    $("#attributerank").change(function (){
+      attr_choice = ""
+      attr_choice = $(this).val()
+      console.log(attr_choice)
+      return attr_choice
+    })
+
+    // console.log(attr_choice)
+
+    // var a1 = document.getElementById("attributerank");
+    // var a_1 = a1.options[a1.selectedIndex].value;
+
+    // var a2 = document.getElementById("attributerank");
+    // var a_2 = a2.options[a2.selectedIndex].text;
+
+    // var a3 = $("#attributerank :selected").text(); // The text content of the selected option
+    // var a4 = $("#attributerank").val(); // The value of the selected option
+
+
+    // console.log(a1)
+    // console.log(a_1)
+    // console.log(a2)
+    // console.log(a_2)
+    // console.log(a3)
+    // console.log(a4)
+
     function populatemap(mapstate){  
+
+      // An array which will be used to store created cityMarkers
 
       if (clickCircle != undefined || clickCircle != null) {
         myMap.removeLayer(clickCircle);
@@ -178,11 +217,8 @@ function  populatecountydetails(statedata,countydata){
 
         var county_specs = response[0].Counties
 
-        console.log(mapstate)
-
-        console.log(county_specs.length)
-
         for (var i = 0; i < county_specs.length; i++) {
+
 
           // Conditionals for county population
           var color = "";
@@ -197,6 +233,30 @@ function  populatecountydetails(statedata,countydata){
           var lon = parseFloat(longitude_1[1])
 
           var location = [lat,-lon]
+
+          if(attr_choice != undefined) 
+          {
+              var attr_rank_join = attr_choice.split(" ").join("")
+
+              if( county_specs[i].County[attr_rank_join]["Rank"] == 1 || 
+                  county_specs[i].County[attr_rank_join]["Rank"] == 2 || 
+                  county_specs[i].County[attr_rank_join]["Rank"] == 3)
+              {
+                L.marker(location)
+                .bindPopup(attr_choice + ":" + county_specs[i].County[attr_rank_join]["Rank"] 
+                                + "<hr> <h6>" + "County Name: " + county_specs[i].County.CountyName + "</h6>")
+                .addTo(myMap);
+              }
+          }
+
+          // var rankLayer = L.layerGroup(RankMarkers);
+
+          // Overlays that may be toggled on or off
+
+          // var overlayMaps = {
+          //   Top_3: rankLayer
+          // };
+
 
           if (population_approx > 600000) {
             color = "red";
@@ -235,7 +295,12 @@ function  populatecountydetails(statedata,countydata){
         myMap.setView([40.7128,-74.0060],6)
       }
 
+      // Pass our map layers into our layer control
+      // Add the layer control to the map
+      // L.control.layers(overlayMaps).addTo(myMap);
+
     }
+
     
 
 
