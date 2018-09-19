@@ -118,8 +118,6 @@ function  populatecountydetails(statedata,countydata){
 
       // end function populatecountydetails(statedata,countydata)
 
-        console.log(data_list)
-
     })
 
 }
@@ -167,7 +165,6 @@ function  populatecountydetails(statedata,countydata){
     function populatemap(mapstate){  
 
       if (clickCircle != undefined || clickCircle != null) {
-        console.log(clickCircle)
         myMap.removeLayer(clickCircle);
       };
 
@@ -180,6 +177,10 @@ function  populatecountydetails(statedata,countydata){
         }
 
         var county_specs = response[0].Counties
+
+        console.log(mapstate)
+
+        console.log(county_specs.length)
 
         for (var i = 0; i < county_specs.length; i++) {
 
@@ -196,8 +197,6 @@ function  populatecountydetails(statedata,countydata){
           var lon = parseFloat(longitude_1[1])
 
           var location = [lat,-lon]
-
-          console.log(location)
 
           if (population_approx > 600000) {
             color = "red";
