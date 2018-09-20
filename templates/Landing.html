@@ -114,40 +114,39 @@
     <div class="jumbotron text-center"> 
         <div id="state" class="container-fluid"> 
             <div class="row">
+                <br>
                 <h4>Top 10 Counties of a State based on Health Factors</h4>
                 <br>
                 <br>
                 <br>
-            </div>
+            </div> 
             <div class="row">
                 <div class="col-lg-4 text-center">                    
                         <select class="form-control" id="stateselect2"> <option value="empty">Select State</option>
                         </select>
-                </div>
-                <div id="top10counties" class="col-lg-8">  
-                        <img src="../Images/USAMap.jpg" alt="USAMap" style="width:400px;height:400px;">
-                        <p class="text-center sub-head">USA Map</p>            
+                    <!-- Top 10 County Panel -->
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="top-10-counties">
+                                <h4 class="card-title text-dark" style="color: orange">
+                                    Top 10 Counties
+                                </h4>
+                                <table id="county-background2" class="table table-hover">
+                                    <thead>
+                                        <tr id="top-10-counties-table">
+                                            <td style="color: orange"><strong> County </strong></td>
+                                            <td style="color: orange"><strong> County Rank</strong></td>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>    
+                </div>                              
+                <div id="top10counties" class="col-lg-8">                    
                 </div> 
-            <!-- Top 10 County Panel -->
-            <div class="row">
-                <div class="col-lg-4">
-                    <div class="top-10-counties">
-                        <h4 class="card-title text-dark" style="color: orange">
-                            Top 10 Counties
-                        </h4>
-                        <table id="county-background2" class="table table-hover">
-                            <thead>
-                                <tr id="top-10-counties-table">
-                                    <td style="color: orange"><strong> County </strong></td>
-                                    <td style="color: orange"><strong> County Rank</strong></td>
-                                </tr>
-                            </thead>
-                            <tbody>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>           
             </div>  
         </div>
     </div>

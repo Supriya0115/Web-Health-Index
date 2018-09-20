@@ -58,6 +58,21 @@ padding-top: 20px;
 height: 100%;
 }
 
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+.bar {
+  fill: purple;
+}
+
+.bar:hover {
+  fill: orange;
+}
+
+
 tr:hover td {background:olivedrab}
 
 
