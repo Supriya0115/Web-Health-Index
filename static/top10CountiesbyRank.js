@@ -50,72 +50,80 @@ function populatetable(statedata2){
             row.append("td").text(value)
             row.append("td").text(index+1)   
         }) 
-// //Creating a bar plot for the top 10 counties     
-//         var Rank = [1,2,3,4,5,6,7,8,9,10]
-//         // svg container
-//         var svgHeight = 400;
-//         var svgWidth = 800;
-//         // margins
-//         var margin = {
-//             top: 50,
-//             right: 50,
-//             bottom: 50,
-//             left: 50
-//         }
+//Inserting plot for top 10 counties        
+        // var Rank = [1,2,3,4,5,6,7,8,9,10]
         
-//         // chart area minus margins
-//         var chartHeight = svgHeight - margin.top - margin.bottom;
-//         var chartWidth = svgWidth - margin.left - margin.right;
+        // console.log(d3.max(Rank))
+        // var revRank = []
+        // Rank.forEach((data)=>{
+        //   revRank.push((d3.max(Rank)-data)+1)
+        // })
+        // console.log(revRank)
+        // // svg container
+        // var svgHeight = 400;
+        // var svgWidth = 1000;
         
-//         // create svg container
-//         var svg = d3.select("#top10counties").append("svg")
-//         .attr("height", svgHeight)
-//         .attr("width", svgWidth)
+        // // margins
+        // var margin = {
+        //   top: 50,
+        //   right: 50,
+        //   bottom: 50,
+        //   left: 50
+        // };
         
-//         // shift everything over by the margins
-//         var chartGroup = svg.append("g")
-//         .attr("transform", `translate(${margin.left}, ${margin.top})`)
+        // // chart area minus margins
+        // var chartHeight = svgHeight - margin.top - margin.bottom;
+        // var chartWidth = svgWidth - margin.left - margin.right;
         
-//         // scale y to chart height
-//         var yScale = d3.scaleLinear()
-//         .domain([0, d3.max(Rank)])
-//         .range([chartHeight, 0]);
-
-//         // scale x to chart width
-//         var xScale = d3.scaleBand()
-//         .domain(countylist)
-//         .range([0, chartWidth])
-//         .padding(0.05)
-
-//         // create axes
-//         var yAxis = d3.axisLeft(yScale);
-//         var xAxis = d3.axisBottom(xScale);
-
-//         // set x to the bottom of the chart
-//         chartGroup.append("g")
-//         .attr("transform", `translate(0, ${chartHeight})`)
-//         .call(xAxis);
-
-//         // set y to the y axis
-//         // This syntax allows us to call the axis function
-//         // and pass in the selector without breaking the chaining
-//         chartGroup.append("g")
-//         .call(yAxis);
-
-//         /* Note: The above code is equivalent to this:
-//             var g = chartGroup.append("g");
-
-//             yAxis(g);
-//         */
-//         // Append Data to chartGroup
-//         chartGroup.selectAll(".bar")
-//         .data(Rank)
-//         .enter()
-//         .append("rect")
-//         .classed("bar", true)
-//         .attr("x", (d, i) => xScale(countylist[i]))
-//         .attr("y", d => yScale(d))
-//         .attr("width", xScale.bandwidth())
-//         .attr("height", d => chartHeight - yScale(d));
+        // // create svg container
+        // var svg = d3.select("#top10counties").append("svg")
+        //   .attr("height", svgHeight)
+        //   .attr("width", svgWidth);
+        
+        // // shift everything over by the margins
+        // var chartGroup = svg.append("g")
+        //   .attr("transform", `translate(${margin.left}, ${margin.top})`);
+        
+        // // scale y to chart height
+        // var yScale = d3.scaleLinear()
+        //   .domain([(d3.max(Rank)+1),1])
+        //   .range([chartHeight, 0]);
+        
+        // // scale x to chart width
+        // var xScale = d3.scaleBand()
+        //   .domain(countylist)
+        //   .range([0, chartWidth])
+        //   .padding(0.05);
+        
+        // // create axes
+        // var yAxis = d3.axisLeft(yScale);
+        // var xAxis = d3.axisBottom(xScale);
+        
+        // // set x to the bottom of the chart
+        // chartGroup.append("g")
+        //   .attr("transform", `translate(0, ${chartHeight})`)
+        //   .call(xAxis);
+        
+        // // set y to the y axis
+        // // This syntax allows us to call the axis function
+        // // and pass in the selector without breaking the chaining
+        // chartGroup.append("g")
+        //   .call(yAxis);
+        
+        // /* Note: The above code is equivalent to this:
+        //     var g = chartGroup.append("g");
+        
+        //     yAxis(g);
+        // */
+        // // Append Data to chartGroup
+        // chartGroup.selectAll(".bar")
+        //   .data(Rank)
+        //   .enter()
+        //   .append("rect")
+        //   .classed("bar", true)
+        //   .attr("x", (d, i) => xScale(countylist[i]))
+        //   .attr("y", d => yScale(d))
+        //   .attr("width", xScale.bandwidth())
+        //   .attr("height", d => chartHeight - yScale(d));   
     })  
 };
