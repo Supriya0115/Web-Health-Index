@@ -18,7 +18,7 @@ app = Flask(__name__)
 #------------------------------------------------------------------------------------#
 # MLab MongoDB connection #
 #------------------------------------------------------------------------------------#
-conn = 'mongodb://healthi_admin:healthisrs9=@ds255332.mlab.com:55332/healthi_db'
+conn = 'mongodb://<dbuser>:<dbpassword>@ds255332.mlab.com:55332/healthi_db'
 client = pymongo.MongoClient(conn,ConnectTimeoutMS=30000)
 
 # #Database connection
@@ -39,19 +39,31 @@ def routes():
     Routes_dict['States']= "/states"
     Routes_dict['State County Names']="/countynames/<state>"
     Routes_dict['State Zscores Countywise'] ="/countyzscores/<state>"
-    Routes_dict['State Details Countywise']="/countydetails/<state>"
+    Routes_dict['State Details Countywise']="/countyalldetails/<state>"
     Routes_dict['State Geographical & Demographical Details Countywise'] = "/countygeodetails/<state>"
+    Routes_dict['Ranks & Zscores Details Countywise'] = "/countyrankszscores/<state>"
     sample_list.append(Routes_dict)
     return jsonify(sample_list)
 
 # Route to display all the five attributes to measure health of a county
 @app.route("/attributes")
-def attributes():
+def attributes(): 
     sample_list = []
     for item in db.Category.find():
         for cat in item['cat']:
             sample_list.append(cat)
     return jsonify(sample_list)
+
+# Route to display all the ranks to measure health of a county
+@app.route("/countyrankszscores/<state>")
+def rankszscores(state):
+    sample_list = []
+    County_dict = {}
+    for item in db.CountyRanksZscores.find():
+        if item['State'].lower() == state.lower():
+            County_dict[state.upper()] = item['CountyDetails']
+    sample_list.append(County_dict)    
+    return jsonify(sample_list)    
 
 #Route to display all the states present in the database
 @app.route("/states")
@@ -138,8 +150,11 @@ if __name__=="__main__":
 
 #Pragati : 9/14/2018. Updated to create 4 routes and modified 1 route.
 #          Tested mlab cloud mongodb as well as with local mongodb.  
-#Pragati : 9/15/2018. Updated the code and include two routes: /routes to display
+#Pragati : 9/15/2018. Updated the code and included two routes: /routes to display
 #          all the available routes and /countygeodetails/<state> to display
 #          geographical & demographical information.
 #Supriya : 9/17/2018. Updated line #79 for Java Script Logic; # 42 for correct display 
 #          of county details route.
+#Pragati : 9/19/2018. Updated the code and included one route: 
+#          /countyrankszscores/<state> to display the ranks and zscores of
+#          the counties.
