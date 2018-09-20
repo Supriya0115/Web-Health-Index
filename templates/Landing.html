@@ -43,76 +43,75 @@
         </div>
     </nav>
     <!-- Use Case 1 : State and County Drop down for ranks and plots -->
-    <div class="jumbotron text-center"> <div id="county" class="container">
+    <div class="jumbotron jumbotron-fluid text-center"> <div id="county" class="container">
         <!-- Marquee tag -->
         <div>
             <h3>
-                <marquee>World Health Organization holistic definition of health - Health is a state of complete physical, mental, and social well-being and not merely the absence of disease or infirmity. It matters where we live!!!</marquee>
+                <marquee bg>World Health Organization holistic definition of health - Health is a state of complete physical, mental, and social well-being and not merely the absence of disease or infirmity. It matters where we live!!!</marquee>
                 <img id="leafImage">
             </h3>
         </div>
-         <!-- Drop down panel -->
-         <div class="row content">
-                <div class="col-md-4 text-center">                    
-                        <select class="form-control" id="stateselect"> <option value="empty">Select State</option>
-                        </select>
-                    <hr>
-                        <select class="form-control" id="countyselect">
-                                    <option value="empty">Select County</option>
-                        </select>
-                    <!-- County Background Panel -->
-                    <div class="row">
-                            <div class="col-md-12">
-                                <div class="metadata-of-sample">
+        <!-- Drop down panel -->
+        <div class="row content">
+            <div class="col-md-4 text-center">                    
+                    <select class="form-control" id="stateselect"> <option value="empty">Select State</option>
+                    </select>
+                <hr>
+                    <select class="form-control" id="countyselect">
+                                <option value="empty">Select County</option>
+                    </select>
+                <!-- County Background Panel -->
+                <div class="row">
+                        <div class="col-md-12">
+                            <div class="metadata-of-sample">
 
-                                    <h4 id="count" style="color: lightgreen"></h4>
-                                    <hr>
-                                    <table id="county-background" class="table table-hover">
-                                        <thead>
-                                            <tr id="sample-metadata">
-                                                <td align="left" style="color: orange"><strong> Attribute </strong></td>
-                                                <td align="left" style="color: orange"><strong> County Rank</strong></td>
-                                            </tr>
-                                        </thead>
-                                        <tbody align="left">
+                                <h4 id="count" style="color: lightgreen"></h4>
+                                <hr>
+                                <table id="county-background" class="table table-hover">
+                                    <thead>
+                                        <tr id="sample-metadata">
+                                            <td align="left" style="color: orange"><strong> Attribute </strong></td>
+                                            <td align="left" style="color: orange"><strong> County Rank</strong></td>
+                                        </tr>
+                                    </thead>
+                                    <tbody align="left">
 
-                                        </tbody>
-                                    </table>
+                                    </tbody>
+                                </table>
 
-                                </div>
                             </div>
-                    </div>
-
-                </div>
-                
-                <div class="col-md-1"> </div>
-
-            
-
-                <!-- Plot Panel -->
-                <div class="col-md-7 sidenav">
-                        <div>
-                                <select class="form-control" id="attributerank"> 
-                                    <option value="empty">Select Attribute</option>
-                                    <option value = "Quality of Life">Quality of Life</option>
-                                    <option value = "Economic Factors">Economic Factors</option>
-                                    <option value = "Physical Environment">Physical Environment</option>
-                                    <option value = "Health Behaviours">Health Behaviours</option>
-                                    <option value = "Clinical Care">Clinical Care</option>
-                                </select>
-                        </div> <br>
-                    <div id = "map"></div>
-                </div>
-
+                        </div>
                 </div>
 
             </div>
-        </div>    
+            
+            <div class="col-md-1"> </div>
 
-        <hr>
+        
+
+            <!-- Plot Panel -->
+            <div class="col-md-7 sidenav">
+                    <div>
+                            <select class="form-control" id="attributerank"> 
+                                <option value="empty">Select Attribute</option>
+                                <option value = "Quality of Life">Quality of Life</option>
+                                <option value = "Economic Factors">Economic Factors</option>
+                                <option value = "Physical Environment">Physical Environment</option>
+                                <option value = "Health Behaviours">Health Behaviours</option>
+                                <option value = "Clinical Care">Clinical Care</option>
+                            </select>
+                    </div> <br>
+                <div id = "map"></div>
+            </div>
+
+            </div>
+
+        </div>
+
+    <hr>
     <!-- Use Case 2 : Top 10 counties of a selected state-->
     <div class="jumbotron text-center"> 
-        <div id="state" class="container-fluid"> 
+        <div id="state" class="container"> 
             <div class="row">
                 <h4>Top 10 Counties of a State based on Health Factors</h4>
                 <br>
