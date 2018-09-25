@@ -14,6 +14,12 @@
   <script src="https://unpkg.com/leaflet@1.3.3/dist/leaflet.js"
   integrity="sha512-tAGcCfR4Sc5ZP5ZoVz0quoZDYX5aCtEm/eu1KhSLj2c9eFrylXZknQYmxUssFaVJKvvc0dJQixhGjG2yXWiV9Q=="
   crossorigin=""></script>  
+  
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+ 
+
+
+
 <style>  
   tr:hover td {background:olivedrab}
 </style>
@@ -35,7 +41,8 @@
                 <ul class="nav navbar-nav navbar-right"> 
                     <li><a href="#county">State and County Selector</a></li>
                     <li><a href="#state">State Selector</a></li>
-                    <!-- <li><a href="#portfolio">Portfolio</a></li> -->
+                    <li><a href="#UC3">Attribute Selector</a></li>
+                    <!-- li><a href="#portfolio">Portfolio</a></li -->
                     <li><a href="#aboutproject">About Project</a></li>
                     <li><a href="#aboutus">About Us</a></li>  
                 </ul>
@@ -152,6 +159,147 @@
         </div>
     </div>
     <hr>
+    <!--  -----------------UC3-----Begin------------------------  -->
+    <h3>User's Choice :      Select Attributes and a State to get details of Top 3 Healthy Counties</h3>
+    <Br>
+    <h4 align="left"></h4>
+    <br>
+    <!--div class="jumbotron text-center"> <div id="UC3" class="container-fluid"></div -->
+    
+    <div class="container">
+        
+        <div class="col-md-12 preferenceHeader">
+            <div class="col-md-2 preferenceHeader">
+                State Name
+            </div>
+            
+            <div class="col-md-2 preferenceHeader">
+                Preference 1
+            </div>
+            
+            <div class="col-md-2 preferenceHeader">
+                Preference 2    
+            </div>
+            
+            <div class="col-md-2 preferenceHeader" >
+                Preference 3
+            </div>
+            
+            <div class="col-md-2 preferenceHeader">
+                Preference 4
+            </div>
+            
+            <div class="col-md-2">
+            </div>
+               
+        </div>
+        
+        <div class="col-md-12" >
+            <div class="col-md-2" >
+                <select class="form-control" id="StateShortName" name="StateShortName" aria-placeholder="Select Sample">
+                    <option value="empty">Select State</option>
+                    <option value = "AK">Alaska</option>
+                    <option value = "CA">California</option>
+                    <option value = "CT">Connecticut</option>
+                    <option value = "NJ">New Jersey</option>
+                    <option value = "NY">New York</option>
+                </select>
+            </div>
+            
+            <div class="col-md-2"  style="color:orangered" >
+                <select class="form-control" id="Preference1" name="Preference1"> 
+                    <option value="empty">Select Attribute</option>
+                    <option value = "QualityofLife">QualityofLife</option>
+                    <option value = "EconomicFactors">EconomicFactors</option>
+                    <option value = "PhysicalEnvironment">PhysicalEnvironment</option>
+                    <option value = "HealthBehaviours">HealthBehaviours</option>
+                    <option value = "ClinicalCare">ClinicalCare</option>
+                </select>
+            </div>
+            
+            <div class="col-md-2"  style="color:orangered">
+                <select class="form-control" id="Preference2" name="Preference2"> 
+                    <option value="empty">Select Attribute</option>
+                    <option value = "QualityofLife">QualityofLife</option>
+                    <option value = "EconomicFactors">EconomicFactors</option>
+                    <option value = "PhysicalEnvironment">PhysicalEnvironment</option>
+                    <option value = "HealthBehaviours">HealthBehaviours</option>
+                    <option value = "ClinicalCare">ClinicalCare</option>
+                </select>    
+            </div>
+            
+            <div class="col-md-2"  style="color:orangered" >
+                <select class="form-control" id="Preference3" name="Preference3" > 
+                    <option value="empty">Select Attribute</option>
+                    <option value = "QualityofLife">QualityofLife</option>
+                    <option value = "EconomicFactors">EconomicFactors</option>
+                    <option value = "PhysicalEnvironment">PhysicalEnvironment</option>
+                    <option value = "HealthBehaviours">HealthBehaviours</option>
+                    <option value = "ClinicalCare">ClinicalCare</option>
+                </select>
+            </div>
+            
+            <div class="col-md-2"  style="color:orangered" >
+                <select class="form-control" id="Preference4" name="Preference4"> 
+                    <option value="empty">Select Attribute</option>
+                    <option value = "QualityofLife">QualityofLife</option>
+                    <option value = "EconomicFactors">EconomicFactors</option>
+                    <option value = "PhysicalEnvironment">PhysicalEnvironment</option>
+                    <option value = "HealthBehaviours">HealthBehaviours</option>
+                    <option value = "ClinicalCare">ClinicalCare</option>
+                </select>
+            </div>
+            
+            <div class="col-md-2 preferenceHeader">
+                <button class=SubmitButton type="button" id="userSelectionButton" name="userSelectionButton" color =rgb(0, 0, 0)>Submit</button>
+            </div>    
+        </div>
+        
+        <br>
+
+
+        <div class="col-md-12 sidenav">
+       
+            <div id = "mapUC3" name="mapUC3"></div>
+    
+       </div>
+       
+       <div id="uc3Table" name="uc3Table" class="col-md-12 countyData" >
+    
+       </div>
+  
+    </div>
+    <script>
+        $(document).ready(function(){
+          $('#preference1').click(function(){
+            displayCounties();
+          });
+        });
+      </script>
+    <br>
+
+   
+
+    <div id ="countyFacts" name="countyFacts" class="countyData"></div>
+    
+    
+    <script type=text/javascript>
+        $SCRIPT_ROOT = {{ request.script_root|tojson|safe }};
+    </script>
+    <script>
+        $(document).ready(function(){
+          $('#userSelectionButton').click(function(){
+            displayCounties();
+          });
+        });
+      </script>
+
+
+    <!--  --------------End ---UC3-----------------------------  -->
+
+
+
+    <hr>
         <!-- Project Area
         <div class="container-fluid text-center"> <div id="portfolio" class="container-fluid">
                 <h2>Our Visualizations!</h2>
@@ -183,7 +331,7 @@
         <!-- About our Project -->
         <div class="jumbotron text-center"> <div id="aboutproject" class="container-fluid">
                 <div class ="row">
-                        <div class="col-lg-12">  
+                        <div class="col-lg-12 alignTextLeft">  
                             <h2 style="font-size:30px;"><strong>Healthy County</strong></h2>
                             <h3 align="left" style="color:orange;">Objective:</h3>
                             <ul>
@@ -209,6 +357,8 @@
                         </div>
                 </div>
         </div> 
+
+
         <hr>               
         <!-- About us -->
         <div class="jumbotron text-center"> <div id="aboutus" class="container-fluid">
@@ -223,11 +373,11 @@
                 <div class="row">
                     <div class="col-lg-6">  
                         <p class="text-center sub-head" style="color:orange;">Pragati Mehta</p> 
-                        <p><i>"From ideation till execution, learning, working together enjoyed every part of the project!"</i></p>           
+                        <p class="alignTextLeft"><i>"From ideation till execution, learning, working together enjoyed every part of the project!"</i></p>           
                     </div>
                     <div class="col-lg-6">        
                         <p class="text-center sub-head" style="color:orange;">Riicha Mohan</p>           
-                        <p><i>"In a project, every person each piece is equally important however small or seemingly insignificant they may seem, just like the nuts and bolts of a giant machine and time is the essence!"</i></p>
+                        <p class="alignTextLeft"><i>"In a project, every person, each piece is equally important, however small or seemingly insignificant they may seem, just like the nuts and bolts of a giant machine and time is the 'Essence'!"</i></p>
                     </div>
                 </div>
                 <br>
@@ -235,11 +385,11 @@
                 <div class="row">
                     <div class="col-lg-6">  
                         <p class="text-center sub-head" style="color:orange;">Sivakumar Venkatachalam</p>             
-                        <p><i>"A project full of learnings!"</i></p>
+                        <p class="alignTextLeft"><i>"A project full of learnings!"</i></p>
                     </div>
                     <div class="col-lg-6">
                         <p class="text-center sub-head" style="color:orange;">Supriya Satpathy</p>
-                        <p><i>"The power of building on each other's work and collectively looking at the final product!"</i></p>           
+                        <p class="alignTextLeft"><i>"The power of building on each other's work and collectively looking at the final product!"</i></p>           
                     </div>
                 </div>        
                 </div> 
@@ -253,6 +403,11 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
 <script src="{{ url_for('static', filename='countyselection.js') }}"></script>
 <script src="{{ url_for('static', filename='top10CountiesbyRank.js') }}"></script>
+<script src="{{ url_for('static', filename='logic.js') }}"></script>
+
+<script>
+    populateDropDown();
+</script>
 
 
 

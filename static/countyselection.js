@@ -26,6 +26,7 @@ Plotly.d3.json(stateurl,function(error,statedata){
 
  $("#stateselect").change( function(){
     statedata = $(this).val();
+    // window.location.reload(true);
     $("#countyselect").empty();
     $("#count").empty();
 
@@ -128,11 +129,17 @@ function  populatecountydetails(statedata,countydata){
 
 
 
-
+  
 
   // Creating our initial map object
   // We set the longitude, latitude, and the starting zoom level
   // This gets inserted into the div with an id of 'map'
+
+  // var container = L.DomUtil.get('map');
+  //       // Need to null the exiting map before reploting it
+  //       if(container != null){
+  //        container._leaflet_id = null;
+  //       }
 
 
   var myMap = L.map("map", {
