@@ -1,6 +1,12 @@
 import pymongo 
+<<<<<<< HEAD
 from flask import(Flask, render_template,jsonify, request)
 from Data.CountySelection import CountySelection
+=======
+from flask import(Flask, render_template,jsonify)
+from Data.CountySelection import CountySelection
+# from Data.convertXlsToJSON import CreateMongoDataBase
+>>>>>>> master
 #------------------------------------------------------------------------------------#
 # Flask Setup #
 #------------------------------------------------------------------------------------#
@@ -12,23 +18,37 @@ app = Flask(__name__)
 conn = "mongodb://localhost:27017"
 client = pymongo.MongoClient(conn)
 
+<<<<<<< HEAD
 # # create / Use database
+=======
+# create / Use database
+>>>>>>> master
 db = client.healthi_db
 
 #------------------------------------------------------------------------------------#
 # MLab MongoDB connection #
 #------------------------------------------------------------------------------------#
+<<<<<<< HEAD
 # conn = 'mongodb://<add user Pwd here>@ds255332.mlab.com:55332/healthi_db'
 # client = pymongo.MongoClient(conn,ConnectTimeoutMS=30000)
 # db = client.get_default_database()
 
 #Database connection
+=======
+# conn = 'mongodb://healthi_admin:healthisrs9=@ds255332.mlab.com:55332/healthi_db'
+# client = pymongo.MongoClient(conn,ConnectTimeoutMS=30000)
+
+# # #Database connection
+# db = client.get_default_database()
+# # db = client.get_database('healthi_db')
+>>>>>>> master
 
 # db = client.get_database('healthi_db')
 
 # Home Page
 @app.route("/")
 def home():
+<<<<<<< HEAD
     result = request.form
     for r in request.form:
             print(r)
@@ -54,6 +74,26 @@ def result():
     #   print(userPref.to_html())
     #   Send back the html back to user
       return render_template("Landing.html",result = userPref.to_html())
+=======
+    return(render_template("Landing.html"))
+
+# Route to display all the five attributes to measure health of a county
+@app.route("/routes")
+def routes():
+    sample_list = []
+    Routes_dict = {}
+    Routes_dict['Attributes'] = "/attributes"
+    Routes_dict['States']= "/states"
+    Routes_dict['State County Names']="/countynames/<state>"
+    Routes_dict['State Zscores Countywise'] ="/countyzscores/<state>"
+    Routes_dict['State Details Countywise']="/countyalldetails/<state>"
+    Routes_dict['State Geographical & Demographical Details Countywise'] = "/countygeodetails/<state>"
+    Routes_dict['Ranks & Zscores Details Countywise'] = "/countyrankszscores/<state>"
+    Routes_dict['User Selection'] = "/attributeSelection/<userSelection>"
+    
+    sample_list.append(Routes_dict)
+    return jsonify(sample_list)
+>>>>>>> master
 
 # Route to display all the five attributes to measure health of a county
 @app.route("/attributes")
@@ -126,6 +166,53 @@ def details(state):
             Statedetaildict['Counties'] = item['Counties']
             sample_list.append(Statedetaildict)
     return jsonify(sample_list)        
+
+# RM Added route for UC3
+# User selection is sent
+@app.route('/attributeSelection/<userSelection>')
+def result(userSelection):
+    selection = {}
+    selections = userSelection.split(':')
+
+    for select in selections:
+            preferences = select.split('_')
+            # populate the selection dictionary
+            if (preferences[0] not in selection and preferences[1] != "Select Attribute"):
+               selection[preferences[0]] = preferences[1]
+            print(preferences[1])
+    print(selection)
+    #   Get the Top 3 counties per user selection
+    userPref = CountySelection(selection)
+      
+    userPref = userPref.Selection()
+    print(userPref.keys())
+    print(userPref.to_json())
+    top3Counties = []
+    RecommendedCounty ={}
+    for  index , row in userPref.iterrows():
+        # print(item[0])
+        RecommendedCounty =  {'AggregatedValue': row['AggregatedValue'],
+        'CountyName':row['CountyName'], 
+        'CountyWikiLink': row['CountyWikiLink'], 
+        'Latitude' : row['Latitude'],
+        'Longitude' : row['Longitude'], 
+        'Population': row['Population'], 
+        'StateLatitude' : row['StateLatitude'], 
+        'StateLongitude' : row['StateLongitude'],
+        'StateName' : row['StateName'], 
+        'StateShortName': row['StateShortName'], 
+        'TotalArea' : row['TotalArea']
+        }
+        top3Counties.append(RecommendedCounty)
+# ['AggregatedValue', 'CountyName', 'CountyWikiLink', 'Latitude',
+#     'Longitude', 'Population', 'StateLatitude', 'StateLongitude',
+#     'StateName', 'StateShortName', 'TotalArea']
+    #   print(userPref.to_html())
+    #   print(userPref.to_html())
+    #   Send back the html back to user
+    return jsonify(top3Counties)
+    # return render_template("Landing.html",result = userPref)
+
 
 #------------------------------------------------------------------------------------#
 # Initiate Flask app

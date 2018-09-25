@@ -15,7 +15,11 @@ import re
 
 
 #--------------------------------------------------------------------------------#
+<<<<<<< HEAD
 def JSON_from_excel():
+=======
+def CreateMongoDataBase():
+>>>>>>> master
         scrapedCounties = {}  
         ## https://inkplant.com/code/state-latitudes-longitudes
         statesOfUSA = {
@@ -74,7 +78,12 @@ def JSON_from_excel():
 
 
         filePath = ""
+<<<<<<< HEAD
         
+=======
+        print('CreateMongoDataBase')
+
+>>>>>>> master
         # Scrap the counties and store in the dictionary for lookup
         website_url = requests.get("https://en.wikipedia.org/w/index.php?title=User:Michael_J/County_table&oldid=368803236").text
         wikiBaseURL = "https://en.wikipedia.org"
@@ -156,7 +165,11 @@ def JSON_from_excel():
                                 "Rank" : sh.cell(row_index, 12 ).value,
                             }
                             
+<<<<<<< HEAD
                             # Make sure we have the county in dictionary
+=======
+                            # Make sure we have the county exists in dictionary
+>>>>>>> master
                             if (StateShortName + CountyName in scrapedCounties): 
                                 c = scrapedCounties[StateShortName + CountyName]
                                 # Perform lookup from the scraped data for the geo 
@@ -204,12 +217,20 @@ def JSON_from_excel():
             json.dump(scrapedCounties, f, indent = 4)
 
 
+<<<<<<< HEAD
         #Connection for local host
+=======
+        #### Connection for local host
+>>>>>>> master
         conn = 'mongodb://localhost:27017'
         client = pymongo.MongoClient(conn)
         db=client.healthi_db
         
+<<<<<<< HEAD
         # #Connection for remote host
+=======
+        #### Connection for remote host
+>>>>>>> master
         # conn = 'mongodb://<add user Pwd here>@ds255332.mlab.com:55332/healthi_db'
         # client = pymongo.MongoClient(conn,ConnectTimeoutMS=30000)
         # db = client.get_default_database()
@@ -232,7 +253,7 @@ def JSON_from_excel():
         result = state.insert_many(StateList)
         print("Multiple States {0}".format(result.inserted_ids))
         
-JSON_from_excel()
+CreateMongoDataBase()
 
 #Siva : 9/13/2018. Updated to create one database and use the mlab cloud mongodb.
 #Pragati : 9/14/2018. Updated and cleaned the code (Note: Verified by re-running the code
