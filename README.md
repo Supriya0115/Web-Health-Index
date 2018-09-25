@@ -1,7 +1,7 @@
 # Web-Health-Index
-<<<<<<< HEAD
-Project to determine County level health index /score for certain states and provide interactive visualization for users.
-=======
+
+##Project to determine County level health index /score for certain states and provide interactive visualization for users.
+
 
 Standard Score / z-Score. The standard score (more commonly referred to as a z-score) is a very useful statistic because it (a) allows us to 
 calculate the probability of a score occurring within our normal distribution and (b) enables us to compare two scores that are 
